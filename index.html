@@ -685,14 +685,14 @@ function buildCalGrid(){
     var city=DAY_CITY[day];
     var cell=document.createElement('div');
     var transMap={3:' dc-miami-tampa',5:' dc-tampa-orlando'};
-    var cityClass=transMap[d]||(' dc-'+DAY_CITY[d]);
-    cell.className='day-cell'+cityClass+(sel?' selected':'');
+    var cityClass=transMap[day]||(' dc-'+DAY_CITY[day]);
+    cell.className='day-cell'+cityClass+(selDay===day?' selected':'');
     cell.id='dc'+day;cell.dataset.day=day;
     var head=document.createElement('div');head.className='dc-head';
     var num=document.createElement('span');num.className='dc-num';num.textContent=day;
     var wd=document.createElement('span');wd.className='dc-wd';wd.textContent=DAY_WD[day];
     head.appendChild(num);head.appendChild(wd);
-    if(HW.has(day)){var h=document.createElement('span');h.style.fontSize='10px';h.textContent='🎃';head.appendChild(h);}
+    if(HW_DAYS.has(day)){var h=document.createElement('span');h.style.fontSize='10px';h.textContent='🎃';head.appendChild(h);}
     cell.appendChild(head);
     // date sub
     var ds=document.createElement('div');ds.className='dc-time';ds.textContent=DAY_DATE[day];cell.appendChild(ds);
