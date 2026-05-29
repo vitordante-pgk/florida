@@ -260,12 +260,12 @@ a{color:inherit;text-decoration:none}
 
 <div class="tabs-nav">
   <button class="tab-btn active" onclick="sw('checklist',this)">✅ Checklist</button>
-  <button class="tab-btn" onclick="sw('voos',this)">✈️ Voos & Reservas</button>
+  <button class="tab-btn" onclick="sw('pagamentos',this)">💳 Pagamentos</button>
   <button class="tab-btn" onclick="sw('planner',this)">📅 Planner</button>
+  <button class="tab-btn" onclick="sw('voos',this)">✈️ Voos &amp; Reservas</button>
   <button class="tab-btn" onclick="sw('parques',this)">🎡 Parques</button>
   <button class="tab-btn" onclick="sw('compras',this)">🛍️ Compras</button>
   <button class="tab-btn" onclick="sw('mapa',this)">🗺️ Mapa</button>
-  <button class="tab-btn" onclick="sw('pagamentos',this)">💳 Pagamentos</button>
 </div>
 
 <!-- ═══ CHECKLIST ═══ -->
@@ -340,7 +340,7 @@ a{color:inherit;text-decoration:none}
         <div style="color:var(--muted)">Conf: <strong>6152422550</strong></div>
         <div style="color:var(--muted)">PIN: <strong>2543</strong></div>
         <div style="color:var(--muted)">US$ 317,19 ≈ R$ 1.594</div>
-        <div style="color:#EA580C;font-size:9px;margin-top:2px">⚠️ Pagar até 01/ago/2026</div>
+        <div style="color:#EA580C;font-size:9px;margin-top:2px">✅ Reembolsável · Pagar até 01/ago/2026</div>
         <div style="margin-top:4px"><span class="res-badge-conf">✓ Confirmado</span></div>
       </div>
     </div>
@@ -361,7 +361,7 @@ a{color:inherit;text-decoration:none}
         <div style="color:var(--muted)">Conf: <strong>5562.572.512</strong></div>
         <div style="color:var(--muted)">PIN: <strong>1917</strong></div>
         <div style="color:var(--muted)">R$ 1.317 · Café incluso</div>
-        <div style="color:#DC2626;font-size:9px;margin-top:2px">🚫 Não reembolsável</div>
+        <div style="color:#DC2626;font-size:9px;margin-top:2px">🚫 Não reembolsável · Cancel = perda total</div>
         <div style="margin-top:4px"><span class="res-badge-conf">✓ Confirmado</span></div>
       </div>
     </div>
@@ -375,13 +375,13 @@ a{color:inherit;text-decoration:none}
       <div style="font-size:11px;font-weight:700;color:var(--orlando);text-align:center;margin-bottom:.25rem">ORLANDO</div>
       <div style="font-size:10px;color:var(--muted);text-align:center;margin-bottom:.625rem">05–18/set · 13 noites</div>
       <div style="background:var(--orlando-bg);border:1px solid var(--orlando);border-radius:var(--rs);padding:.625rem;font-size:10px;width:100%">
-        <div style="font-weight:700;color:var(--orlando);margin-bottom:3px">Monreale IDrive District</div>
+        <div style="font-weight:700;color:var(--orlando);margin-bottom:3px">Wyndham I-Drive Avanti Resort</div>
         <div style="color:#374151">8300 Jamaican Ct, Orlando</div>
         <div style="color:var(--muted);margin-top:2px">Check-in: 05/set 15:00</div>
         <div style="color:var(--muted)">Check-out: 18/set 11:00</div>
-        <div style="color:var(--muted)">Conf: <strong>5465.683.306</strong></div>
-        <div style="color:var(--muted)">PIN: <strong>6391</strong></div>
-        <div style="color:var(--muted)">R$ 5.350 (US$ 1.064,34)</div>
+        <div style="color:var(--muted)">Conf: <strong>287750347300</strong></div>
+        <div style="color:var(--muted)">Resort fee: <strong>R$ 1.325,12</strong> no hotel</div>
+        <div style="color:var(--muted)">R$ 3.673,60 · 6x R$ 612,27 · Cartao 9377</div>
         <div style="color:#EA580C;font-size:9px;margin-top:2px">⚠️ Cobrado no check-in + caução USD 200</div>
         <div style="margin-top:4px"><span class="res-badge-conf">✓ Confirmado</span></div>
       </div>
@@ -440,7 +440,7 @@ a{color:inherit;text-decoration:none}
     <div style="margin-top:.75rem;font-size:10px;background:var(--disney-bg);border-radius:var(--rs);padding:.5rem">
       Titular: <strong>Vitor de Oliveira Dante</strong><br>
       Vincular em StartYourDisneyExperience.com<br>
-      <span style="color:#EA580C">⚠️ Cancelamento gratuito até 23/08/2026</span>
+      <span style="color:#EA580C">⚠️ Cancel grátis até 23/08/2026</span>
     </div>
     <div style="margin-top:.5rem"><span class="res-badge-conf">✓ Confirmado</span></div>
   </div>
@@ -545,12 +545,12 @@ a{color:inherit;text-decoration:none}
 
 var CL_ITEMS=[
   {id:'passagem', cat:'passagem',  label:'Passagem Aerea LATAM',          sub:'GRU-MIA 01/set · MIA-GRU 18/set · LA8194/LA8199 · 6x LATAM cartao 9377', parcelas:6, parc_val:1544.31, parc_inicio:'2025-12', val:9265.84, vf:'R$ 9.265,84', done:true, badge:'ok'},
-  {id:'hotel-mia',cat:'hospedagem',label:'Hotel Miami - Shine Suites',    sub:'5445 Collins Ave · 2 diarias 01-03/set · Booking #6152422550', val:1594.00, vf:'R$ 1.594,00', done:true, badge:'ok', note:'Pagar ate 01/ago/2026 no cartao 9377', parcelas:1, parc_val:1594.00, parc_inicio:'2026-08', futuro:true},
+  {id:'hotel-mia',cat:'hospedagem',label:'Hotel Miami - Shine Suites',    sub:'5445 Collins Ave · 2 diarias 01-03/set · Booking #6152422550 · PIN: 2543', val:1594.00, vf:'R$ 1.594,00', done:true, badge:'ok', note:'Reembolsavel · Pagar ate 01/ago/2026 · Cancel gratis (verificar voucher)', parcelas:1, parc_val:1594.00, parc_inicio:'2026-08', futuro:true},
   {id:'hotel-tpa',cat:'hospedagem',label:'Hotel Tampa — Hampton Inn Hilton',sub:'2 noites · 03-05/set · Conf: 5562.572.512 · PIN: 1917 · Cafe incluso',val:1317.00,vf:'R$ 1.317,00',done:true,badge:'ok',note:'Pago em mai/2026 · Nao reembolsavel',parcelas:1,parc_val:1317.00,parc_inicio:'2026-05'},
-  {id:'hotel-orl',cat:'hospedagem',label:'Hotel Orlando — Monreale IDrive',sub:'13 noites · 05-18/set · Conf: 5465.683.306 · PIN: 6391',   val:5350.00, vf:'R$ 5.350,00', done:true,  badge:'ok',   note:'Cobrado em 02/set no cartao · Deposito USD 200 em dinheiro reembolsavel', parcelas:1, parc_val:5350.00, parc_inicio:'2026-09', futuro:true},
+  {id:'hotel-orl',cat:'hospedagem',label:'Hotel Orlando — Wyndham I-Drive Avanti Resort',sub:'13 noites · 05-18/set · Decolar: 287750347300 · 1 King Bed Deluxe · 2 adultos', val:4998.72, vf:'R$ 4.998,72', done:true, badge:'ok', note:'Cartao 9377 · 6x R$ 612,27 · Resort fee R$ 1.325,12 pago no hotel · Cancel gratis ate 02/set/2026', parcelas:6, parc_val:612.27, parc_inicio:'2026-06', futuro:true},
   {id:'ingr-univ',cat:'ingresso',  label:'Ingressos Universal Orlando',   sub:'3-Day Park-to-Park+2Free · 07-13/set · Ref:17695232209-2TRDC · 4x cartao 9377', parcelas:4, parc_val:1155.99, parc_inicio:'2026-05', val:4623.98, vf:'R$ 4.623,98', done:true, badge:'ok', note:'Reserva: 679982347000'},
   {id:'ingr-dis', cat:'ingresso',  label:'Ingressos Disney 4-Park Magic', sub:'4 dias entre 11-17/set · 2 adultos · Ref Disney: EYQR93313131 · Decolar: 271719347100 · 4x cartao 4660',parcelas:4,parc_val:1115.80,parc_inicio:'2026-05',val:4463.19,vf:'R$ 4.463,19',done:true,badge:'ok',note:'Cancelamento gratuito ate 23/08/2026 · Vincular ao My Disney Experience'},
-  {id:'ingr-hw',   cat:'ingresso', label:'MK Halloween Party',           sub:'Ingresso separado · 13/set · entrada 19:00 · 2 pax',       val:1800.00, vf:'R$ 1.800,00', done:false, badge:'warn', est:true, note:'Esgota rapido - compre com antecedencia!'},
+  {id:'ingr-hw',   cat:'ingresso', label:'MK Halloween Party — Mickey Not So Scary', sub:'Walt Disney World · 2 adultos · 13/set 19h · Conf: JWQT70696969 · Auth: 089417 · Visa 0504', val:1900.00, vf:'R$ 1.900,00', done:true, badge:'ok', note:'US$ 338,68 · Pago no PIX · Visa 0504'},
   {id:'ingr-sea',  cat:'ingresso', label:'SeaWorld (incluso no pacote acima)',           sub:'Incluso no pacote Busch+SeaWorld · Ticket Vitor: 720289605909194341 · 17/set', val:0, vf:'', done:true, badge:'ok', note:'Sem custo adicional — incluso no pacote R$ 1.390,86'},
   {id:'ingr-busch',cat:'ingresso', label:'Busch Gardens + SeaWorld + All Day Dining (2 parques)', sub:'2 adultos · Ticket Vitor: 720289605909194341 · Ticket Luana: 600687345510957230 · Decolar: 216584347200', val:1390.86, vf:'R$ 1.390,86', done:true, badge:'ok', parc_inicio:'2026-05', parcelas:1, parc_val:1390.86, note:'Pago no PIX · Order ID: 12010802 · Cancel gratis ate 31/dez/2026'},
   {id:'carro',     cat:'locacao',  label:'Locacao de Carro — Florida Rental Car', sub:'18 dias · Retirada MIA 01/set · Devolucao MIA 18/set 17:30 · 6x cartao', parcelas:6, parc_val:833.33, parc_inicio:'2026-05', val:5000.00, vf:'R$ 5.000,00', done:true,  badge:'ok'},
@@ -685,14 +685,14 @@ function buildCalGrid(){
     var city=DAY_CITY[day];
     var cell=document.createElement('div');
     var transMap={3:' dc-miami-tampa',5:' dc-tampa-orlando'};
-    var cityClass=transMap[day]||(' dc-'+DAY_CITY[day]);
+    var cityClass=transMap[day]||(' dc-'+city);
     cell.className='day-cell'+cityClass+(selDay===day?' selected':'');
     cell.id='dc'+day;cell.dataset.day=day;
     var head=document.createElement('div');head.className='dc-head';
     var num=document.createElement('span');num.className='dc-num';num.textContent=day;
     var wd=document.createElement('span');wd.className='dc-wd';wd.textContent=DAY_WD[day];
     head.appendChild(num);head.appendChild(wd);
-    if(HW_DAYS.has(day)){var h=document.createElement('span');h.style.fontSize='10px';h.textContent='🎃';head.appendChild(h);}
+    if(HW.has(day)){var h=document.createElement('span');h.style.fontSize='10px';h.textContent='🎃';head.appendChild(h);}
     cell.appendChild(head);
     // date sub
     var ds=document.createElement('div');ds.className='dc-time';ds.textContent=DAY_DATE[day];cell.appendChild(ds);
@@ -922,67 +922,9 @@ function openParkDetail(parkId){
   },100);
 }
 
-function openShopPanel(shopId){
-  var s=SHOP_DETAIL[shopId];if(!s)return;
-  var panel=document.getElementById('shopPanel');
-  if(!panel){
-    panel=document.createElement('div');
-    panel.id='shopPanel';
-    panel.style.cssText='background:var(--card);border:1px solid var(--shop-bd);border-left:4px solid var(--shop);border-radius:var(--r);padding:1.25rem;margin-top:1rem;';
-    var det=document.getElementById('detPanel');
-    det.parentNode.insertBefore(panel,det.nextSibling);
-  }
-  panel.style.display='block';
-  var buyRows=Object.entries(s.buy).map(function(e){
-    var labels={vestuario:'👗 Vestuário',tenis:'👟 Tênis',oculos:'🕶️ Óculos',perfume:'🌸 Perfume',eletronicos:'📱 Eletrônicos'};
-    var good=e[1]!=='Nao'&&e[1]!=='Não'&&e[1]!=='Nao'&&e[1]!=='Limitado';
-    return '<div style="font-size:11px;padding:2px 0;display:flex;gap:8px;border-bottom:1px solid rgba(180,83,9,.1)"><span style="min-width:110px;color:var(--muted)">'+(labels[e[0]]||e[0])+'</span><span style="font-weight:500;color:'+(good?'var(--shop)':'#bbb')+'">'+e[1]+'</span></div>';
-  }).join('');
-  panel.innerHTML='<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:.875rem">'
-    +'<div style="font-size:14px;font-weight:600;color:var(--shop)">🛍️ '+s.name+'</div>'
-    +'<button onclick="document.getElementById(&quot;shopPanel&quot;).style.display=&quot;none&quot;" style="background:none;border:none;font-size:18px;cursor:pointer;color:var(--muted)">×</button>'
-    +'</div>'
-    +'<div style="font-size:11px;color:var(--muted);margin-bottom:.75rem">📍 '+s.addr+'</div>'
-    +'<div style="display:grid;grid-template-columns:1fr 1fr;gap:.625rem;margin-bottom:.875rem">'
-    +'<div style="background:var(--shop-bg);border-radius:var(--rs);padding:.625rem"><div style="font-size:10px;font-weight:600;color:var(--shop);margin-bottom:2px">HORÁRIO</div><div style="font-size:12px">'+s.hours+'</div></div>'
-    +'<div style="background:var(--shop-bg);border-radius:var(--rs);padding:.625rem"><div style="font-size:10px;font-weight:600;color:var(--shop);margin-bottom:2px">TELEFONE</div><div style="font-size:12px">'+s.phone+'</div></div>'
-    +'</div>'
-    +'<div style="margin-bottom:.75rem"><div style="font-size:11px;font-weight:600;color:var(--shop);margin-bottom:4px">O QUE COMPRAR</div>'+buyRows+'</div>'
-    +'<div style="margin-bottom:.75rem"><div style="font-size:11px;font-weight:600;color:var(--shop);margin-bottom:4px">DESTAQUES</div>'
-    +'<ul style="padding-left:14px">'+s.best.map(function(b){return '<li style="font-size:12px;margin-bottom:2px">'+b+'</li>';}).join('')+'</ul></div>'
-    +'<div style="background:var(--hw);border-radius:var(--rs);padding:.625rem;font-size:12px;color:var(--hw-tx)">💡 '+s.tip+'</div>';
-}
 
-function openShopPanel(shopId){
-  var s=SHOP_DETAIL[shopId];if(!s)return;
-  var panel=document.getElementById('shopPanel');
-  if(!panel){
-    panel=document.createElement('div');
-    panel.id='shopPanel';
-    panel.style.cssText='background:var(--card);border:1px solid var(--shop-bd);border-left:4px solid var(--shop);border-radius:var(--r);padding:1.25rem;margin-top:1rem;';
-    var det=document.getElementById('detPanel');
-    if(det&&det.parentNode)det.parentNode.insertBefore(panel,det.nextSibling);
-  }
-  panel.style.display='block';
-  var buyRows=Object.entries(s.buy).map(function(e){
-    var labels={vestuario:'Vestuario',tenis:'Tenis',oculos:'Oculos',perfume:'Perfume',eletronicos:'Eletronicos'};
-    var good=e[1]!=='Nao'&&e[1]!=='Limitado';
-    return '<div style="font-size:11px;padding:2px 0;display:flex;gap:8px;border-bottom:1px solid rgba(180,83,9,.1)"><span style="min-width:90px;color:var(--muted)">'+(labels[e[0]]||e[0])+'</span><span style="font-weight:500;color:'+(good?'var(--shop)':'#bbb')+'">'+e[1]+'</span></div>';
-  }).join('');
-  var bestList=s.best.map(function(b){return '<li style="font-size:12px;margin-bottom:2px">'+b+'</li>';}).join('');
-  panel.innerHTML='<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:.875rem">'
-    +'<div style="font-size:14px;font-weight:600;color:var(--shop)">Detalhes: '+s.name+'</div>'
-    +'<button onclick="document.getElementById(&quot;shopPanel&quot;).style.display=&quot;none&quot;" style="background:none;border:none;font-size:20px;cursor:pointer;color:var(--muted)">x</button>'
-    +'</div>'
-    +'<div style="font-size:11px;color:var(--muted);margin-bottom:.75rem">'+s.addr+'</div>'
-    +'<div style="display:grid;grid-template-columns:1fr 1fr;gap:.5rem;margin-bottom:.75rem">'
-    +'<div style="background:var(--shop-bg);border-radius:var(--rs);padding:.5rem .75rem"><div style="font-size:10px;font-weight:600;color:var(--shop)">HORARIO</div><div style="font-size:11px">'+s.hours+'</div></div>'
-    +'<div style="background:var(--shop-bg);border-radius:var(--rs);padding:.5rem .75rem"><div style="font-size:10px;font-weight:600;color:var(--shop)">AVALIACAO</div><div style="font-size:11px">&#11088; '+s.rating+'</div></div>'
-    +'</div>'
-    +'<div style="margin-bottom:.625rem"><div style="font-size:11px;font-weight:600;color:var(--shop);margin-bottom:3px">O QUE COMPRAR</div>'+buyRows+'</div>'
-    +'<div style="margin-bottom:.625rem"><div style="font-size:11px;font-weight:600;color:var(--shop);margin-bottom:3px">DESTAQUES</div><ul style="padding-left:14px">'+bestList+'</ul></div>'
-    +'<div style="background:var(--hw);border-radius:var(--rs);padding:.5rem .75rem;font-size:11px;color:var(--hw-tx)">'+s.tip+'</div>';
-}
+
+
 
 function populateTargetDay(){
   var sel=document.getElementById('targetDay');
@@ -1100,166 +1042,345 @@ function buildParks(){
 
 // ─── SHOPS TAB ──────────────────────────────────────────
 var SHOPS_DATA=[
-  // MIAMI
-  {city:'Miami',region:'Brickell / Downtown',order:1,
-   name:'Brickell City Centre',addr:'701 S Miami Ave, Miami, FL 33130',
-   hours:'Seg-Sab: 11:00-21:00 · Dom: 11:00-19:00',
-   rating:4.7,reviews:19681,
-   tags:['Grife','Moda','Gastronomia','Luxo'],
-   best:['Zara','H&M','Saks Fifth Avenue','Apple Store','restaurantes rooftop'],
-   note:'Shopping ultramoderno com arquitetura impressionante. Melhor para compras de grife e moda em Miami. Combine com jantar nos restaurantes do andar superior.',
-   review:'Brickell City Centre é um dos destinos mais impressionantes de Miami. O design open-air com o Climate Ribbon é espetacular. Mix de luxo e acessivel. Perfeito para uma tarde de compras e jantar.',
-   buy:{vestuario:'Sim (Zara, H&M, Saks)',eletronicos:'Apple Store',tenis:'Limitado',oculos:'Saks',perfume:'Sim',souvenirs:'Não'}},
-  {city:'Miami',region:'Aventura',order:2,
-   name:'Aventura Mall',addr:'19501 Biscayne Blvd, Aventura, FL 33180',
-   hours:'Seg-Sab: 10:00-21:30 · Dom: 11:00-19:00',
-   rating:4.5,reviews:52000,
-   tags:['Variedade','Familia','Eletronicos','Moda'],
-   best:['Apple Store','Nike','Zara','H&M','Nordstrom','Forever 21','MAC Cosmetics'],
-   note:'Um dos maiores malls do sul da Florida. Ideal para quem quer tudo num lugar so. Proximo ao hotel em Miami. Bom para o dia de chegada quando quer comprar rapido.',
-   review:'Enorme, bem organizado, tem tudo. Apple Store muito boa. Nordstrom excelente para roupas. Restaurantes bons na praca de alimentacao.',
-   buy:{vestuario:'Excelente (Nordstrom, Zara, H&M)',eletronicos:'Apple Store completa',tenis:'Nike, Foot Locker',oculos:'LensCrafters, lojas de marca',perfume:'Nordstrom, MAC',souvenirs:'Limitado'}},
+  // ═══ MIAMI ════════════════════════════════════════════
+  {city:'Miami', region:'Brickell / Downtown',
+   name:'Brickell City Centre', addr:'701 S Miami Ave, Miami FL 33130',
+   emoji:'🏙️', tags:['Luxo','Moda','Gastronomia'], bestDay:'Dia 02/set · manhã',
+   horario:'Recomendado 10h-12h', lotacao:'Tranquilo pela manhã · agita após 14h',
+   hours:'Seg-Sab 10-21h · Dom 12-19h', map:'https://maps.google.com/?q=Brickell+City+Centre+Miami',
+   buy:['Saks Fifth Avenue · roupas de grife','Valentino · Hunter Boots · AllSaints','Apple Store · tecnologia','Free People · Zara · H&M'],
+   tip:'Estacionamento no subsolo. Fica no caminho do Wynwood.'},
 
-  // ROAD TRIP
-  {city:'Trajeto Miami → Orlando',region:'Fort Lauderdale',order:3,
-   name:'Las Olas Boulevard',addr:'E Las Olas Blvd, Fort Lauderdale, FL',
-   hours:'Lojas: 10:00-20:00 · Restaurantes: ate 23:00',
-   rating:4.7,reviews:386,
-   tags:['Boutiques','Gastronomia','Passeio','Arte'],
-   best:['boutiques locais','galerias de arte','cafes beira-canal','joalherias'],
-   note:'Parada de 1h no trajeto. Mais para passeio e cafe do que compras. Boutiques unicas, nao encontradas nos malls. Excelente para cafe da manha ou almoco rapido.',
-   review:'Rua linda com canais, boutiques elegantes e cafes. Melhor parada do trajeto para quem vem de Miami.',
-   buy:{vestuario:'Boutiques locais exclusivas',eletronicos:'Nao',tenis:'Nao',oculos:'Algumas oticas locais',perfume:'Nao',souvenirs:'Artesanato local'}},
+  {city:'Miami', region:'Miami Beach',
+   name:'Lincoln Road Mall', addr:'Lincoln Rd, Miami Beach FL 33139',
+   emoji:'🚶', tags:['Ao ar livre','Moda','Turístico'], bestDay:'Dia 02/set · tarde',
+   horario:'Recomendado 15h-18h', lotacao:'Moderado · mais cheio fim de tarde',
+   hours:'Lojas 10-22h (variam)', map:'https://maps.google.com/?q=Lincoln+Road+Miami+Beach',
+   buy:['H&M · Zara · Free People','Livrarias · decoração','Souvenir shops','Restaurantes e cafés'],
+   tip:'Rua de pedestres ao ar livre em Miami Beach. Ótimo para caminhada e jantar.'},
 
-  // ORLANDO - Shopping days
-  {city:'Orlando',region:'Perto Disney (Sab 05/set recomendado)',order:4,
-   name:'Orlando Vineland Premium Outlets',addr:'8200 Vineland Ave, Orlando, FL 32821',
-   hours:'Seg-Sab: 10:00-21:00 · Dom: 11:00-19:00',
-   rating:4.5,reviews:42224,
-   tags:['Outlet','Nike','Tommy','Gucci','Kate Spade','Levi\'s'],
-   best:['Nike (~40% off)','Tommy Hilfiger','Lacoste','Kate Spade','Coach','Gucci outlet','Versace outlet','Polo Ralph Lauren'],
-   note:'MELHOR PRIMEIRO. O outlet mais proximo da Disney. Mais tranquilo que o da I-Drive. Va aqui primeiro no Sab 05/set antes do Sunday. Pegar cupons na entrada economiza mais 10-20%.',
-   review:'Excelente outlet com marcas de luxo. Gucci e Versace com desconto real. Nike tambem tem bons precos. Recomendo chegar cedo para estacionar bem.',
-   buy:{vestuario:'Excelente — Tommy, Lacoste, Polo RL',eletronicos:'Nao',tenis:'Nike, Adidas, Asics',oculos:'Ray-Ban outlet',perfume:'Algumas marcas',souvenirs:'Nao'}},
-  {city:'Orlando',region:'Perto I-Drive (Dom 06 / Sab 12)',order:5,
-   name:'The Mall at Millenia',addr:'4200 Conroy Rd, Orlando, FL 32839',
-   hours:'Seg-Sex: 11:00-21:00 · Sab: 10:00-21:00 · Dom: 11:00-19:00',
-   rating:4.6,reviews:30007,
-   tags:['Luxo','Grife','Cheesecake Factory','Apple','LV','Gucci'],
-   best:['Louis Vuitton','Gucci','Chanel','Prada','Balenciaga','Burberry','Apple Store','Zara','H&M','Cheesecake Factory'],
-   note:'Shopping mais sofisticado de Orlando. Va aqui NO SABADO 12/set pela manha antes do After Hours do Hollywood Studios a noite. Almoco obrigatorio no Cheesecake Factory.',
-   review:'Incrivel! Louis Vuitton, Gucci, Chanel em um so lugar. Apple Store completa. Cheesecake Factory delicioso. Ambiente elegante e bem mantido.',
-   buy:{vestuario:'Luxo e acessivel (LV, Gucci, Zara, H&M)',eletronicos:'Apple Store completa',tenis:'Nike flagship, Jimmy Choo',oculos:'Sunglass Hut, marcas de luxo',perfume:'Todas as marcas de grife',souvenirs:'World of Disney proximo'}},
-  {city:'Orlando',region:'International Drive (Dom 13/set)',order:6,
-   name:'Outlet Marketplace (I-Drive)',addr:'4951 International Dr, Orlando, FL 32819',
-   hours:'Seg-Sab: 10:00-21:00 · Dom: 10:00-20:00',
-   rating:4.2,reviews:8500,
-   tags:['Clearance','Ponta de estoque','Nike $40','Adidas $7','Levi\'s $20'],
-   best:['Nike Clearance ($20-50)','Adidas Clearance ($7-30)','Levi\'s ($15-30)','Under Armour','Tommy Hilfiger clearance','Reebok'],
-   note:'GARIMPO RAIZ. Lojas de ponta de estoque com precos imbativeis. Melhor para quem quer mais quantidade com menos dinheiro. Va aqui no Dom 13/set pela manha antes do MK Halloween a noite.',
-   review:'Achados incriveis! Nike por $40, Adidas por menos de $10. Nao tem a mesma elegancia do Vineland mas os precos sao bem menores. Perfeito para comprar varios pares de tenis.',
-   buy:{vestuario:'Tudo com precos de ponta de estoque',eletronicos:'Nao',tenis:'MELHOR LUGAR (Nike/Adidas/Reebok clearance)',oculos:'Alguns',perfume:'Nao',souvenirs:'Nao'}},
-  {city:'Orlando',region:'Proximo Disney (fim do dia / a noite)',order:7,
-   name:'Disney Springs',addr:'1486 Buena Vista Dr, Lake Buena Vista, FL 32830',
-   hours:'Diariamente: 10:00-23:00 · Restaurantes ate 00:00',
-   rating:4.6,reviews:65000,
-   tags:['Gratuito','World of Disney','Souvenir','Restaurantes','Entretenimento'],
-   best:['World of Disney (maior loja Disney do mundo)','Star Wars Galactic Outpost','NBA Experience','Lego Store','Under Armour','Tommy Bahama'],
-   note:'Entrada totalmente GRATUITA — sem precisar de ingresso! Ideal para noites apos parques ou domingos. World of Disney e a maior loja da marca no mundo. Bom para souvenirs.',
-   review:'Perfeito para noites depois dos parques. Sem estresse, so caminha e vai as lojas. World of Disney e incrivel. Restaurantes muito bons.',
-   buy:{vestuario:'Under Armour, Tommy Bahama',eletronicos:'Nao',tenis:'Nike Store',oculos:'Nao',perfume:'Nao',souvenirs:'MELHOR LUGAR (World of Disney)'}},
-  {city:'Orlando',region:'I-Drive (noite apos parques)',order:8,
-   name:'Universal CityWalk',addr:'6000 Universal Blvd, Orlando, FL 32819',
-   hours:'Diariamente: 11:00-02:00 (lojas ate 22:00)',
-   rating:4.4,reviews:28000,
-   tags:['Gratuito','Bares','Bowling','Karaoke','Entretenimento'],
-   best:['Universal Studios Store','Hard Rock Cafe','Voodoo Doughnut','Bob Marley\'s','Hollywood Drive-In Golf'],
-   note:'Entrada GRATUITA. Mais entretenimento que compras. Va aqui a noite depois dos parques Universal. Bob Marleys Bar e o karaoke sao imperdives para jovens.',
-   review:'Melhor vida noturna de Orlando! Bowling, karaoke, bares tematicos. Pouco para compras mas muito para diversao. Sempre agitado.',
-   buy:{vestuario:'Universal Studios Store',eletronicos:'Nao',tenis:'Nao',oculos:'Nao',perfume:'Nao',souvenirs:'Universal Studios Store'}},
+  {city:'Miami', region:'Wynwood / Midtown',
+   name:'Wynwood Marketplace', addr:'2250 NW 2nd Ave, Miami FL 33127',
+   emoji:'🎨', tags:['Arte','Moda alternativa','Gastronomia'], bestDay:'Dia 02/set · tarde',
+   horario:'Recomendado 14h-18h', lotacao:'Moderado · mais intenso no fim de semana',
+   hours:'Qui-Dom 11-21h', map:'https://maps.google.com/?q=Wynwood+Marketplace+Miami',
+   buy:['Marcas locais e alternativas','Arte e prints','Acessórios únicos','Food trucks e cervejas artesanais'],
+   tip:'No coração do Wynwood. Combine com as Wynwood Walls (grátis na rua).'},
 
-  // TAMPA
-  {city:'Tampa',region:'Downtown Tampa',order:9,
-   name:'International Plaza & Bay Street',addr:'2223 N West Shore Blvd, Tampa, FL 33607',
-   hours:'Seg-Sab: 10:00-21:00 · Dom: 11:00-19:00',
-   rating:4.5,reviews:12000,
-   tags:['Nordstrom','Apple','Macy\'s','Restaurantes','Bay Street'],
-   best:['Nordstrom (melhor de Tampa)','Apple Store','Macy\'s','Sephora','H&M','Bay Street (bares e restaurantes ao ar livre)'],
-   note:'Melhor shopping de Tampa. Bay Street e a area externa de bares e restaurantes onde acontece a vida noturna. Combine compras durante o dia com jantar e drinks na Bay Street.',
-   review:'Shopping excelente com Nordstrom e Apple. Bay Street a noite e animadissima. Melhor lugar de Tampa para uma noite legal.',
-   buy:{vestuario:'Nordstrom excelente, H&M, Macy\'s',eletronicos:'Apple Store',tenis:'Nordstrom, Foot Locker',oculos:'Nordstrom, LensCrafters',perfume:'Sephora, Nordstrom',souvenirs:'Limitado'}},
+  {city:'Miami', region:'North Miami Beach',
+   name:'Aventura Mall', addr:'19501 Biscayne Blvd, Aventura FL 33180',
+   emoji:'💎', tags:['Luxo','Grande','Variedade'], bestDay:'Dia 02 ou 03/set',
+   horario:'Recomendado 10h-13h', lotacao:'Moderado de manhã · lotado à tarde',
+   hours:'Seg-Sab 10-21h · Dom 12-20h', map:'https://maps.google.com/?q=Aventura+Mall+Florida',
+   buy:['Bloomingdales · Nordstrom · Macys','Michael Kors · Coach · Tory Burch','H&M · Zara · Uniqlo · Primark','Louis Vuitton · Gucci · Prada · Chanel'],
+   tip:'1h ao norte de Miami. Um dos maiores da Florida. Chegue cedo.'},
+
+  {city:'Miami', region:'Sul da Florida',
+   name:'Dolphin Mall', addr:'11401 NW 12th St, Miami FL 33172',
+   emoji:'🐬', tags:['Outlet','Roupas','Sapatos'], bestDay:'Dia 03/set (saindo para Tampa)',
+   horario:'Recomendado 09h-12h', lotacao:'Tranquilo pela manhã',
+   hours:'Seg-Sab 10-21h · Dom 11-19h', map:'https://maps.google.com/?q=Dolphin+Mall+Miami',
+   buy:['Saks Off 5th · Neiman Marcus Last Call','GAP Outlet · Banana Republic Factory','Nike Factory Store · Adidas Outlet','Tommy Hilfiger · Calvin Klein · Polo Ralph Lauren Outlet'],
+   tip:'Outlet a 20min do aeroporto. Ideal no dia de saída para Tampa (dia 03).'},
+
+  {city:'Miami', region:'Midtown / Design District',
+   name:'Miami Design District', addr:'140 NE 39th St, Miami FL 33137',
+   emoji:'✨', tags:['Luxo extremo','Arquitetura','Exclusivo'], bestDay:'Dia 02/set',
+   horario:'Recomendado 11h-14h', lotacao:'Calmo · baixo fluxo',
+   hours:'Seg-Sab 11-19h · Dom 12-18h', map:'https://maps.google.com/?q=Miami+Design+District',
+   buy:['Hermes · Louis Vuitton · Dior','Burberry · Fendi · Celine','Porsche Design · Rolex','Restaurantes exclusivos'],
+   tip:'Apenas para vitrines ou compras de luxo. Arquitetura instagramável.'},
+
+  // ═══ TAMPA ════════════════════════════════════════════
+  {city:'Tampa', region:'Westshore',
+   name:'International Plaza & Bay Street', addr:'2223 N Westshore Blvd, Tampa FL 33607',
+   emoji:'🌴', tags:['Luxo','Moda','Grande'], bestDay:'Dia 04 ou 05/set',
+   horario:'Recomendado 10h-13h', lotacao:'Tranquilo até 14h',
+   hours:'Seg-Sab 10-21h · Dom 12-18h', map:'https://maps.google.com/?q=International+Plaza+Tampa',
+   buy:['Nordstrom · Apple · Coach · Sephora','lululemon · Brooks Brothers','Tommy Hilfiger · J.Crew · Ann Taylor','Bay Street: bares e restaurantes ao ar livre'],
+   tip:'O melhor mall de Tampa. Próximo ao aeroporto.'},
+
+  {city:'Tampa', region:'North Tampa',
+   name:'Walmart Supercenter Tampa', addr:'8320 Galbraith Rd, Tampa FL 33647',
+   emoji:'🛒', tags:['Essenciais','Alimentos','Barato'], bestDay:'Dia 04/set (antes do Busch)',
+   horario:'Recomendado 08h-09h30', lotacao:'Baixo pela manhã',
+   hours:'24 horas', map:'https://maps.google.com/?q=Walmart+North+Tampa',
+   buy:['Protetor solar · repelente · remédios','Snacks e bebidas para o parque','Roupas e calçados básicos','Medicamentos sem receita'],
+   tip:'Comprar essenciais para os parques. Muito mais barato que dentro dos parques.'},
+
+  {city:'Tampa', region:'Ybor City / Downtown',
+   name:'Ybor City Market', addr:'1901 N 13th St, Tampa FL 33605',
+   emoji:'🌙', tags:['Mercado','Artesanato','Gastronomia'], bestDay:'Noite do Dia 04/set',
+   horario:'Recomendado 18h-21h', lotacao:'Agitado à noite · ideal para jantar',
+   hours:'Ter-Dom: horários variam', map:'https://maps.google.com/?q=Ybor+City+Tampa',
+   buy:['Charutos artesanais (especialidade local)','Artesanato e souvenirs','Roupas vintage','Gastronomia cubana e espanhola'],
+   tip:'Bairro histórico de Tampa. Combinar com jantar em restaurante cubano.'},
+
+  // ═══ ORLANDO ══════════════════════════════════════════
+  {city:'Orlando', region:'I-Drive · Próximo ao hotel',
+   name:'Outlet Marketplace I-Drive', addr:'4951 International Dr, Orlando FL 32819',
+   emoji:'👟', tags:['Outlet','Diário','Próximo'], bestDay:'Dia 06 e 12/set',
+   horario:'Recomendado 10h-13h', lotacao:'Tranquilo manhã · moderado tarde',
+   hours:'Seg-Qui 10-21h · Sex-Sab 10-22h · Dom 10-21h', map:'https://maps.google.com/?q=Outlet+Marketplace+International+Drive+Orlando',
+   buy:['Nike Factory Store · Adidas Outlet · Puma','Under Armour · Skechers Factory','American Eagle · Aeropostale · Express','Calvin Klein · Tommy Hilfiger Factory'],
+   tip:'A 5min do Wyndham. Ideal para compras do dia a dia entre os parques.'},
+
+  {city:'Orlando', region:'I-Drive · Próximo ao hotel',
+   name:'Ross Dress for Less (I-Drive)', addr:'8290 International Dr, Orlando FL 32819',
+   emoji:'🏬', tags:['Desconto','Garimpo','Roupas'], bestDay:'Qualquer dia entre parques',
+   horario:'Recomendado 09h30-11h', lotacao:'Tranquilo pela manhã · agitado à tarde',
+   hours:'Seg-Sab 9h30-23h · Dom 11-22h', map:'https://maps.google.com/?q=Ross+Dress+for+Less+International+Drive+Orlando',
+   buy:['Roupas de grife com 20-60% off','Nike · Reebok · Skechers descontados','Bolsas · acessórios · perfumes','Toalhas · itens de casa para levar na mala'],
+   tip:'Liquidação permanente. Paciência para garimpar = ótimas peças.'},
+
+  {city:'Orlando', region:'I-Drive · Próximo ao hotel',
+   name:'ICON Park & I-Drive 360', addr:'8375 International Dr, Orlando FL 32819',
+   emoji:'🎡', tags:['Entretenimento','Souvenir','Noite'], bestDay:'Dia 06/set (noite)',
+   horario:'Recomendado 18h-22h', lotacao:'Moderado à noite · ótimo clima',
+   hours:'Dom-Qui 12-22h · Sex-Sab 12-23h', map:'https://maps.google.com/?q=ICON+Park+Orlando',
+   buy:['Lojas de souvenir e camisetas temáticas','Candy stores e chocolates','Artigos esportivos Orlando City/Magic','The Wheel (roda-gigante) - atração'],
+   tip:'Roda gigante + restaurantes + lojas no I-Drive. Melhor à noite com vista da cidade.'},
+
+  {city:'Orlando', region:'I-Drive · Próximo ao hotel',
+   name:'T.J. Maxx (I-Drive)', addr:'5220 International Dr, Orlando FL 32819',
+   emoji:'🎯', tags:['Desconto','Roupas','Casa'], bestDay:'Qualquer dia entre parques',
+   horario:'Recomendado 09h-11h', lotacao:'Baixo pela manhã',
+   hours:'Seg-Sab 9h30-21h30 · Dom 11-20h', map:'https://maps.google.com/?q=TJ+Maxx+International+Drive+Orlando',
+   buy:['Roupas e bolsas com desconto','Artigos para casa · toalhas de qualidade','Perfumes e cosméticos','Brinquedos e jogos'],
+   tip:'Similar ao Ross mas com melhor organização. Ótimo para presentes.'},
+
+  {city:'Orlando', region:'Disney Area',
+   name:'Vineland Premium Outlets', addr:'8200 Vineland Ave, Orlando FL 32821',
+   emoji:'💎', tags:['Outlet premium','Grife','Melhor outlet'], bestDay:'Dia 07/set (Labor Day)',
+   horario:'Recomendado 08h (abre cedo no Labor Day)', lotacao:'Muito lotado no Labor Day · chegue CEDO',
+   hours:'Seg-Sab 10-22h · Dom 10-21h (Labor Day: abre 08h)', map:'https://maps.google.com/?q=Vineland+Premium+Outlets+Orlando',
+   buy:['Coach · Michael Kors · Kate Spade · Tory Burch','Nike · Polo Ralph Lauren · Lacoste Factory','Prada · Burberry · Versace · Armani Outlet','Tiffany & Co · Salvatore Ferragamo'],
+   tip:'O MELHOR outlet de Orlando. No Labor Day há descontos extras de até 70%. Chegue às 08h!'},
+
+  {city:'Orlando', region:'Disney Area',
+   name:'Disney Springs', addr:'1486 Buena Vista Dr, Lake Buena Vista FL',
+   emoji:'🏰', tags:['Disney','Entretenimento','Souvenir'], bestDay:'Dia 07 e 13/set',
+   horario:'Recomendado 17h-21h (evitar calor)', lotacao:'Moderado à tarde · lotado noite',
+   hours:'Diariamente 10-23h', map:'https://maps.google.com/?q=Disney+Springs+Orlando',
+   buy:['World of Disney (maior loja Disney do mundo)','LEGO Store · Marvel · Star Wars · Pixar','Nike · Columbia · UGG · Free People','Restaurantes: The BOATHOUSE · Paddlefish'],
+   tip:'Entrada gratuita sem ingresso! Estacionamento grátis com validação. Ótimo à noite.'},
+
+  {city:'Orlando', region:'South OBT',
+   name:'Florida Mall', addr:'8001 S Orange Blossom Trail, Orlando FL 32809',
+   emoji:'🏪', tags:['Grande','Variedade','Família'], bestDay:'Dia 07/set tarde',
+   horario:'Recomendado 14h-18h', lotacao:'Moderado · evitar fim de tarde',
+   hours:'Seg-Sab 10-21h · Dom 12-18h', map:'https://maps.google.com/?q=Florida+Mall+Orlando',
+   buy:['Macys · JCPenney · Sears · Dillards','Bath & Body Works · Victoria Secret','Forever 21 · H&M · Zara · Primark','Sephora · Build-a-Bear · Disney Store'],
+   tip:'Um dos maiores da região. Bath & Body Works aqui é excelente para presentes.'},
+
+  {city:'Orlando', region:'Conroy Road',
+   name:'Mall at Millenia', addr:'4200 Conroy Rd, Orlando FL 32839',
+   emoji:'✨', tags:['Luxo','Grife','Premium'], bestDay:'Dia 12/set',
+   horario:'Recomendado 11h-14h', lotacao:'Tranquilo · baixo fluxo',
+   hours:'Seg-Sab 10-21h · Dom 12-18h', map:'https://maps.google.com/?q=Mall+at+Millenia+Orlando',
+   buy:['Louis Vuitton · Gucci · Prada · Burberry','Tiffany · Cartier · Apple Store','Bloomingdales · Anthropologie · Free People','Tesla Store · Lego · Bang & Olufsen'],
+   tip:'Mall mais luxuoso de Orlando. Arquitetura impressionante. Para presentes especiais.'},
+
+  {city:'Orlando', region:'Universal Area',
+   name:'Universal CityWalk', addr:'6000 Universal Blvd, Orlando FL 32819',
+   emoji:'🎪', tags:['Universal','Souvenir','Gastronomia'], bestDay:'Dias 08-10/set (após parque)',
+   horario:'Recomendado 18h-22h (após parque)', lotacao:'Moderado · agita no fim da noite',
+   hours:'Diariamente a partir das 11h', map:'https://maps.google.com/?q=Universal+CityWalk+Orlando',
+   buy:['Harry Potter · Jurassic World · Minions merch','Universal Studios Store oficial','Hard Rock Shop · PVH (Calvin Klein, Tommy)','Restaurantes: Voodoo Doughnut · Toothsome Chocolate'],
+   tip:'Área gratuita em frente aos parques Universal. Ótimo para jantar após o parque.'},
+
+  {city:'Orlando', region:'International Drive',
+   name:'Pointe Orlando', addr:'9101 International Dr, Orlando FL 32819',
+   emoji:'🎭', tags:['Entretenimento','Restaurantes','Noite'], bestDay:'Dia 06 ou 12/set noite',
+   horario:'Recomendado 18h-22h', lotacao:'Moderado · atmosfera de entretenimento',
+   hours:'Diariamente 11-24h', map:'https://maps.google.com/?q=Pointe+Orlando+International+Drive',
+   buy:['Lojas de souvenir e presentes','WonderWorks · atração turística','Restaurants: Margaritaville · Taverna Opa','Fun Spot America nearby'],
+   tip:'Centro de entretenimento no I-Drive. Bom para combinar jantar + compras + atrações.'},
+
+  {city:'Orlando', region:'Nike · Marcas esportivas',
+   name:'Nike Factory Store (Vineland)', addr:'8200 Vineland Ave Suite 901, Orlando FL',
+   emoji:'✔️', tags:['Nike','Esportivo','Outlet'], bestDay:'Dia 07/set (no Vineland Outlets)',
+   horario:'Recomendado 09h-11h', lotacao:'Moderado · lotado no Labor Day',
+   hours:'Seg-Sab 10-22h · Dom 10-21h', map:'https://maps.google.com/?q=Nike+Factory+Store+Vineland+Orlando',
+   buy:['Tênis Nike com 30-50% desconto','Roupas esportivas Nike · Jordan','Meias · acessórios · mochilas Nike','Itens de temporada passada com super desconto'],
+   tip:'A loja Nike mais completa de Orlando. No Labor Day tem descontos extras especiais.'},
+
+  {city:'Orlando', region:'Nike · Marcas esportivas',
+   name:'Adidas Outlet Store', addr:'8200 Vineland Ave, Orlando FL 32821',
+   emoji:'③', tags:['Adidas','Esportivo','Outlet'], bestDay:'Dia 07/set (no Vineland Outlets)',
+   horario:'Recomendado 09h-11h', lotacao:'Moderado',
+   hours:'Seg-Sab 10-22h · Dom 10-21h', map:'https://maps.google.com/?q=Adidas+Outlet+Vineland+Orlando',
+   buy:['Tênis Adidas · Stan Smith · Superstar · Ultraboost','Roupas esportivas Adidas Originals','Chuteiras · material esportivo','Bolsas · mochilas Adidas'],
+   tip:'Ótimos preços em modelos clássicos. Verificar estoque de tênis antes de ir.'},
+
+  {city:'Orlando', region:'Nike · Marcas esportivas',
+   name:'Under Armour Factory Store', addr:'4951 International Dr, Orlando FL 32819',
+   emoji:'🏋️', tags:['Under Armour','Esportivo','Outlet'], bestDay:'Dia 06 ou 12/set',
+   horario:'Recomendado 10h-12h', lotacao:'Tranquilo',
+   hours:'Seg-Qui 10-21h · Sex-Sab 10-22h', map:'https://maps.google.com/?q=Under+Armour+Outlet+International+Drive+Orlando',
+   buy:['Roupas de treino e compressão UA','Tênis e calçados esportivos UA','HeatGear · ColdGear · Storm (impermeável)','Acessórios e meias esportivas'],
+   tip:'Ótima relação custo-benefício. Preços bem abaixo do Brasil.'},
+
+  {city:'Orlando', region:'Lojas imperdíveis',
+   name:'Bath & Body Works (Florida Mall)', addr:'8001 S Orange Blossom Trail, Orlando FL',
+   emoji:'🧴', tags:['Cosméticos','Presentes','Cheiros'], bestDay:'Dia 07/set',
+   horario:'Recomendado 14h-16h', lotacao:'Moderado',
+   hours:'Seg-Sab 10-21h · Dom 12-18h', map:'https://maps.google.com/?q=Bath+Body+Works+Florida+Mall+Orlando',
+   buy:['Hidratantes e splash corporais (favoritos BR)','Sabonetes líquidos · esfoliantes','Velas aromáticas · difusores','Kits presentes e semianuais'],
+   tip:'Brasileiros adoram esta loja. Compre kits de 3 produtos no buy-3-get-3. Estoque mala!'},
+
+  {city:'Orlando', region:'Lojas imperdíveis',
+   name:'Sephora (Mall at Millenia)', addr:'4200 Conroy Rd, Orlando FL 32839',
+   emoji:'💄', tags:['Beleza','Maquiagem','Perfumes'], bestDay:'Dia 12/set',
+   horario:'Recomendado 11h-13h', lotacao:'Tranquilo pela manhã',
+   hours:'Seg-Sab 10-21h · Dom 12-18h', map:'https://maps.google.com/?q=Sephora+Mall+Millenia+Orlando',
+   buy:['Perfumes importados (muito mais barato)','Maquiagem: Too Faced · Charlotte Tilbury · Urban Decay','Skincare: Paula Choices · The Ordinary','Kits exclusivos Sephora Collection'],
+   tip:'Perfumes custam 40-60% menos que no Brasil. Leve lista com o que precisar.'},
+
+  {city:'Orlando', region:'Lojas imperdíveis',
+   name:'Walmart Supercenter Kissimmee', addr:'5170 W Irlo Bronson Hwy, Kissimmee FL',
+   emoji:'🛒', tags:['Essenciais','Alimentos','Barato'], bestDay:'Dia 05/set (chegada Orlando)',
+   horario:'Recomendado 19h-21h (após check-in)', lotacao:'Moderado à noite',
+   hours:'24 horas', map:'https://maps.google.com/?q=Walmart+Kissimmee+5170',
+   buy:['Compras de chegada: snacks · água · protetor','Roupas e calçados baratos · pijamas','Medicamentos OTC · vitaminas · Band-Aid','Bagagens e mochilas extras se necessário'],
+   tip:'Primeira parada ao chegar em Orlando. Abastecer para toda a estadia nos parques.'},
 ];
 
-var SHOP_DETAIL={
-  'shop-day6a':{name:'Ross Dress for Less',addr:'8290 International Dr, Orlando FL',hours:'Seg-Dom: 09:00-23:00',rating:4.3,phone:'(407) 345-0018',best:['Roupas de marca com 20-70% off','Calcados Nike, Adidas, New Balance','Bolsas e acessorios','Utilidades para casa','Perfumes importados baratos'],buy:{vestuario:'Excelente',tenis:'Muito bom',oculos:'Limitado',perfume:'Otimo custo-beneficio',eletronicos:'Nao'},tip:'Chegue cedo — estoque muda diariamente. Procure na secao de marcas na entrada.'},
-  'shop-day6b':{name:'ICON Park / I-Drive 360',addr:'8375 International Dr, Orlando FL',hours:'Seg-Dom: 10:00-00:00',rating:4.5,phone:'(407) 601-7907',best:['Orlando Eye: roda-gigante 122m vista 360 graus','Madame Tussauds celebridades','Sea Life Aquarium','Bares tematicos e restaurantes','Impossicle Burger e outros food trucks'],buy:{vestuario:'Limitado (lojas de souvenir)',tenis:'Nao',oculos:'Nao',perfume:'Nao',eletronicos:'Nao'},tip:'Melhor a noite — iluminacao da roda-gigante e incrivel. Reserve o Orlando Eye online com desconto.'},
-  'shop-day6c':{name:'Outlet Marketplace I-Drive',addr:'4951 International Dr, Orlando FL',hours:'Seg-Sab: 10:00-21:00 | Dom: 10:00-20:00',rating:4.2,phone:'(407) 352-9600',best:['Nike Clearance: $20-50','Adidas Clearance: $7-30','Levis: $15-30','Under Armour ponta de estoque','Tommy Hilfiger e Reebok clearance'],buy:{vestuario:'Otimo clearance',tenis:'MELHOR LUGAR (menor preco)',oculos:'Alguns',perfume:'Nao',eletronicos:'Nao'},tip:'Va de manha cedo para melhores opcoes de tamanho. Labor Day pode ter descontos extras!'},
-  'shop-day7a':{name:'Vineland Premium Outlets',addr:'8200 Vineland Ave, Orlando FL (perto Disney)',hours:'Seg-Sab: 10:00-21:00 | Dom: 11:00-19:00',rating:4.5,phone:'(407) 238-7787',best:['Nike (40% off)','Tommy Hilfiger','Lacoste','Kate Spade / Coach','Gucci Outlet','Versace Outlet','Polo Ralph Lauren','Ray-Ban','Calvin Klein'],buy:{vestuario:'Excelente marcas premium',tenis:'Nike Adidas Asics',oculos:'Ray-Ban outlet',perfume:'Calvin Klein DKNY',eletronicos:'Nao'},tip:'Labor Day: chegue cedo — lojas podem ter vendas especiais. Pegue cupons extras na entrada (economiza mais 10-20%).'},
-  'shop-day7b':{name:'Florida Mall',addr:'8001 S Orange Blossom Trail, Orlando FL',hours:'Seg-Sab: 10:00-21:00 | Dom: 11:00-19:00',rating:4.4,phone:'(407) 851-6255',best:['Primark (roupas europeias a precos acessiveis)','H&M completo','Zara com colecao americana','Apple Store completa','Forever 21','Nordstrom Rack','Bath & Body Works','Victoria Secret'],buy:{vestuario:'Excelente (Primark, H&M, Zara, Forever 21)',tenis:'Foot Locker, Nike','oculos':'Sunglass Hut','perfume':'Bath & Body Works, Sephora','eletronicos':'Apple Store'},tip:'PRIMARK e o destaque: roupas estilo europeu por precos muito baixos. Nao existe no Brasil. Va cedo pois fila e grande.'},
-  'shop-day7c':{name:'Disney Springs',addr:'1486 Buena Vista Dr, Lake Buena Vista FL',hours:'Diariamente: 10:00-23:00',rating:4.6,phone:'Entrada gratuita',best:['World of Disney (maior loja Disney do mundo)','Star Wars Galactic Outpost','Marvel Avengers Campus Store','Lego Store','Under Armour','Tommy Bahama','NBA Experience'],buy:{vestuario:'Under Armour Tommy Bahama',tenis:'Nike Store',oculos:'Nao',perfume:'Nao',eletronicos:'Nao'},tip:'Entrada totalmente gratuita. Ideal para souvenirs Disney. Reserve jantar no Morimoto Asia ou STK para encerrar o dia.'},
-  'shop-ml':{name:'The Mall at Millenia',addr:'4200 Conroy Rd, Orlando FL',hours:'Seg-Sex: 11:00-21:00 | Sab: 10:00-21:00 | Dom: 11:00-19:00',rating:4.6,phone:'(407) 363-3555',best:['Louis Vuitton','Gucci','Chanel','Prada','Balenciaga','Burberry','Apple Store','Zara','H&M','Cheesecake Factory'],buy:{vestuario:'Luxo e acessivel',tenis:'Nike Jimmy Choo',oculos:'Todas as marcas de grife',perfume:'Dior Chanel LV',eletronicos:'Apple Store completa'},tip:'Almoco obrigatorio no Cheesecake Factory. Dia 12: va de manha e retorne para o HS After Hours de noite.'},
-  'shop-id':{name:'Outlet Marketplace I-Drive',addr:'4951 International Dr, Orlando FL',hours:'Seg-Sab: 10:00-21:00 | Dom: 10:00-20:00',rating:4.2,phone:'(407) 352-9600',best:['Nike Clearance $20-50','Adidas $7-30','Levis $15-30','Under Armour clearance','Reebok e Tommy clearance'],buy:{vestuario:'Tudo com precos de ponta de estoque',tenis:'MELHOR LUGAR menor preco',oculos:'Alguns',perfume:'Nao',eletronicos:'Nao'},tip:'Garimpo raiz. Va de manha para melhores tamanhos disponíveis.'},
-  'd-springs':{name:'Disney Springs',addr:'1486 Buena Vista Dr, Lake Buena Vista FL',hours:'10:00-23:00',rating:4.6,phone:'Entrada gratuita',best:['World of Disney','Star Wars Store','Lego Store','Under Armour'],buy:{vestuario:'Under Armour',tenis:'Nike Store',oculos:'Nao',perfume:'Nao',eletronicos:'Nao'},tip:'Entrada gratuita. Melhor para souvenirs Disney. Va a noite para evitar calor.'},
-  'citywalk':{name:'Universal CityWalk',addr:'6000 Universal Blvd, Orlando FL',hours:'11:00-02:00',rating:4.4,phone:'Entrada gratuita',best:['Bob Marleys Bar','Hard Rock Cafe','Voodoo Doughnut','Bowling','Karaoke','Universal Studios Store'],buy:{vestuario:'Universal Store',tenis:'Nao',oculos:'Nao',perfume:'Nao',eletronicos:'Nao'},tip:'Melhor vida noturna de Orlando. Va apos os parques Universal.'},
-  'shop-vl':{name:'Vineland Premium Outlets',addr:'8200 Vineland Ave, Orlando FL',hours:'Seg-Sab: 10:00-21:00 | Dom: 11:00-19:00',rating:4.5,phone:'(407) 238-7787',best:['Nike','Tommy Hilfiger','Gucci outlet','Kate Spade','Lacoste','Ray-Ban','Polo Ralph Lauren'],buy:{vestuario:'Excelente premium',tenis:'Nike Adidas Asics',oculos:'Ray-Ban',perfume:'Calvin Klein',eletronicos:'Nao'},tip:'Pegue cupons na entrada para desconto extra de 10-20%.'},
-  'walmart':{name:'Walmart Supercenter',addr:'5170 W Irlo Bronson Memorial Hwy, Kissimmee FL',hours:'24 horas',rating:4.1,phone:'(407) 396-1190',best:['Agua e bebidas (muito mais barato que parques)','Lanches e snacks','Protetor solar','Creme anti-mosquito','Produtos de higiene','Roupas basicas baratas'],buy:{vestuario:'Basico e economico',tenis:'Nao',oculos:'Simples',perfume:'Nao',eletronicos:'Carregadores cabos basicos'},tip:'Pare aqui no dia 5 ao chegar em Orlando. Leve agua para os dias de parque — economiza muito!'},
-  'tampa-arm':{name:'Armature Works Tampa',addr:'1910 N Ola Ave, Tampa FL',hours:'Seg-Qui: 07:30-21:00 | Sex-Dom: 07:30-22:00',rating:4.7,phone:'(813) 575-9585',best:['Mercado gourmet com dezenas de opcoes','Bares artesanais','Vista do rio Hillsborough','Rooftop bar','Brunch aos finais de semana'],buy:{vestuario:'Nao',tenis:'Nao',oculos:'Nao',perfume:'Nao',eletronicos:'Nao'},tip:'Melhor jantar de Tampa. Reserve uma mesa no rooftop para o por do sol sobre o rio.'},
-};
-
-function getShopDetail(cardId){return SHOP_DETAIL[cardId]||null;}
-
-var SHOP_DETAIL={
-  'shop-day6a':{name:'Ross Dress for Less',addr:'8290 International Dr, Orlando FL',hours:'Seg-Dom: 09:00-23:00',rating:4.3,phone:'(407) 345-0018',best:['Roupas de marca com 20-70% off','Calcados Nike, Adidas, New Balance','Bolsas e acessorios','Perfumes importados baratos'],buy:{vestuario:'Excelente',tenis:'Muito bom',oculos:'Limitado',perfume:'Otimo custo-beneficio',eletronicos:'Nao'},tip:'Chegue cedo — estoque muda diariamente.'},
-  'shop-day6b':{name:'ICON Park / I-Drive 360',addr:'8375 International Dr, Orlando FL',hours:'Seg-Dom: 10:00-00:00',rating:4.5,phone:'(407) 601-7907',best:['Orlando Eye: roda-gigante 122m','Madame Tussauds','Bares tematicos e restaurantes'],buy:{vestuario:'Souvenir limitado',tenis:'Nao',oculos:'Nao',perfume:'Nao',eletronicos:'Nao'},tip:'Melhor a noite — iluminacao incrivel. Reserve online com desconto.'},
-  'shop-day6c':{name:'Outlet Marketplace I-Drive',addr:'4951 International Dr, Orlando FL',hours:'Seg-Sab: 10:00-21:00 | Dom: 10:00-20:00',rating:4.2,phone:'(407) 352-9600',best:['Nike Clearance: $20-50','Adidas Clearance: $7-30','Levis: $15-30','Under Armour ponta de estoque'],buy:{vestuario:'Otimo clearance',tenis:'MELHOR LUGAR menor preco',oculos:'Alguns',perfume:'Nao',eletronicos:'Nao'},tip:'Va de manha cedo para melhores tamanhos.'},
-  'shop-day7a':{name:'Vineland Premium Outlets',addr:'8200 Vineland Ave, Orlando FL',hours:'Seg-Sab: 10:00-21:00 | Dom: 11:00-19:00',rating:4.5,phone:'(407) 238-7787',best:['Nike (40% off)','Tommy Hilfiger','Lacoste','Kate Spade','Gucci Outlet','Ray-Ban','Calvin Klein'],buy:{vestuario:'Excelente marcas premium',tenis:'Nike Adidas Asics',oculos:'Ray-Ban outlet',perfume:'Calvin Klein DKNY',eletronicos:'Nao'},tip:'Labor Day: chegue cedo, lojas podem ter vendas especiais. Cupons na entrada!'},
-  'shop-day7b':{name:'Florida Mall',addr:'8001 S Orange Blossom Trail, Orlando FL',hours:'Seg-Sab: 10:00-21:00 | Dom: 11:00-19:00',rating:4.4,phone:'(407) 851-6255',best:['Primark (roupas europeias baratas)','H&M completo','Zara americana','Apple Store','Forever 21','Nordstrom Rack','Bath e Body Works'],buy:{vestuario:'Excelente - Primark H&M Zara',tenis:'Foot Locker Nike',oculos:'Sunglass Hut',perfume:'Bath e Body Works Sephora',eletronicos:'Apple Store'},tip:'PRIMARK: roupas estilo europeu por precos baixissimos. Nao existe no Brasil!'},
-  'shop-day7c':{name:'Disney Springs',addr:'1486 Buena Vista Dr, Lake Buena Vista FL',hours:'Diariamente: 10:00-23:00',rating:4.6,phone:'Entrada gratuita',best:['World of Disney (maior loja Disney)','Star Wars Galactic Outpost','Lego Store','Under Armour'],buy:{vestuario:'Under Armour Tommy Bahama',tenis:'Nike Store',oculos:'Nao',perfume:'Nao',eletronicos:'Nao'},tip:'Entrada gratuita. Melhor para souvenirs Disney.'},
-  'shop-ml':{name:'The Mall at Millenia',addr:'4200 Conroy Rd, Orlando FL',hours:'Seg-Sex: 11:00-21:00 | Sab: 10:00-21:00',rating:4.6,phone:'(407) 363-3555',best:['Louis Vuitton','Gucci','Chanel','Prada','Burberry','Apple Store','Zara','H&M','Cheesecake Factory'],buy:{vestuario:'Luxo e acessivel',tenis:'Nike Jimmy Choo',oculos:'Todas as marcas de grife',perfume:'Dior Chanel LV',eletronicos:'Apple Store'},tip:'Almoco obrigatorio no Cheesecake Factory. Dia 12: va de manha e retorne para o HS After Hours.'},
-  'shop-id':{name:'Outlet Marketplace I-Drive',addr:'4951 International Dr, Orlando FL',hours:'Seg-Sab: 10:00-21:00 | Dom: 10:00-20:00',rating:4.2,phone:'(407) 352-9600',best:['Nike Clearance $20-50','Adidas $7-30','Levis $15-30','Under Armour clearance'],buy:{vestuario:'Tudo com precos de ponta de estoque',tenis:'MELHOR LUGAR menor preco',oculos:'Alguns',perfume:'Nao',eletronicos:'Nao'},tip:'Garimpo raiz. Va de manha para melhores tamanhos.'},
-  'd-springs':{name:'Disney Springs',addr:'1486 Buena Vista Dr, Lake Buena Vista FL',hours:'10:00-23:00',rating:4.6,phone:'Entrada gratuita',best:['World of Disney','Star Wars Store','Lego Store'],buy:{vestuario:'Under Armour',tenis:'Nike Store',oculos:'Nao',perfume:'Nao',eletronicos:'Nao'},tip:'Entrada gratuita. Va a noite para evitar calor.'},
-  'wallet':{name:'Walmart Supercenter',addr:'5170 W Irlo Bronson Memorial Hwy, Kissimmee FL',hours:'24 horas',rating:4.1,phone:'(407) 396-1190',best:['Agua e bebidas','Lanches e snacks','Protetor solar','Produtos de higiene'],buy:{vestuario:'Basico e economico',tenis:'Nao',oculos:'Simples',perfume:'Nao',eletronicos:'Carregadores e cabos'},tip:'Pare aqui ao chegar em Orlando. Leve agua para os parques — economiza muito!'},
-};
-function getShopDetail(cardId){return SHOP_DETAIL[cardId]||null;}
 
 function buildShops(){
   shopsBuilt=true;
   var container=document.getElementById('shopsContainer');
-  var cities=['Miami','Trajeto Miami → Orlando','Orlando','Tampa'];
-  var orderBadges={'Miami':'01–03/set','Trajeto Miami → Orlando':'Dia 3 · parada','Tampa':'03–05/set','Orlando':'05–18/set'};
-  cities.forEach(function(city){
-    var shops=SHOPS_DATA.filter(function(s){return s.city===city;});
-    if(!shops.length)return;
-    var h=document.createElement('div');
-    h.className='shop-section-title shop-city-block';h.dataset.city=city;
-    h.innerHTML='📍 '+city+'<span style="font-size:11px;background:var(--shop-bg);color:var(--shop);border:1px solid var(--shop-bd);padding:2px 8px;border-radius:20px;font-weight:600;margin-left:4px">'+(orderBadges[city]||'')+'</span>';
-    container.appendChild(h);
-    shops.sort(function(a,b){return a.order-b.order;}).forEach(function(shop){
-      var card=document.createElement('div');card.className='shop-card shop-city-block';card.dataset.city=city;
-      var buyRows=Object.entries(shop.buy).map(function(e){
-        var label=e[0],val=e[1];
-        var labels={vestuario:'👗 Vestuário',eletronicos:'📱 Eletrônicos',tenis:'👟 Tênis',oculos:'🕶️ Óculos',perfume:'🌸 Perfume',souvenirs:'🎁 Souvenirs'};
-        var good=val!=='Nao'&&val!=='Não'&&val!=='Limitado';
-        return '<div style="font-size:11px;padding:3px 0;border-bottom:1px solid rgba(180,83,9,.1);display:flex;gap:8px"><span style="min-width:110px;color:var(--muted)">'+(labels[label]||label)+'</span><span style="font-weight:500;color:'+(good?'var(--shop)':'#999')+'">'+val+'</span></div>';
-      }).join('');
-      var tagHtml=shop.tags.map(function(t){return '<span class="shop-tag">'+t+'</span>';}).join('');
-      var bestHtml=shop.best.map(function(b){return '<li style="font-size:12px;margin-bottom:2px">'+b+'</li>';}).join('');
-      card.innerHTML='<div class="shop-order-badge">📍 '+shop.region+'</div>'
-        +'<h3>'+shop.name+'</h3>'
-        +'<div class="shop-addr">'+shop.addr+'</div>'
-        +'<div class="shop-tags">'+tagHtml+'</div>'
-        +'<div class="shop-meta">'
-        +'<div class="shop-meta-box"><label>Horário</label><p>'+shop.hours+'</p></div>'
-        +'<div class="shop-meta-box"><label>Avaliação</label><p><span class="shop-rating">⭐ '+shop.rating.toFixed(1)+'</span> <span style="font-size:11px;color:var(--muted)">('+shop.reviews.toLocaleString()+ ' avaliações)</span></p></div>'
-        +'</div>'
-        +'<div style="margin-bottom:.75rem"><strong style="font-size:12px;color:var(--shop)">O que comprar:</strong><div style="margin-top:4px">'+buyRows+'</div></div>'
-        +'<div style="margin-bottom:.75rem"><strong style="font-size:12px;color:var(--shop)">Destaques:</strong><ul style="padding-left:14px;margin-top:4px">'+bestHtml+'</ul></div>'
-        +'<div style="font-size:12px;color:var(--text);margin-bottom:.5rem">'+shop.note+'</div>'
-        +'<div class="shop-review">"'+shop.review+'"</div>';
-      container.appendChild(card);
+  if(!container) return;
+  container.innerHTML='';
+  var cityFilter=document.getElementById('shopCityFilter');
+  var activeCityF='all';
+
+  function getDayOrder(bestDay){
+    if(!bestDay) return 99;
+    var m=bestDay.match(/Dia\s+(\d+)/);
+    return m?parseInt(m[1]):98;
+  }
+
+  var LOTACAO_COLOR={
+    'Baixo':'#15803D','Tranquilo':'#15803D','baixo':'#15803D',
+    'Moderado':'#D97706','moderado':'#D97706',
+    'Muito lotado':'#DC2626','lotado':'#DC2626','Agitado':'#2563EB'
+  };
+  function lotacaoColor(txt){
+    for(var key in LOTACAO_COLOR){if(txt&&txt.toLowerCase().indexOf(key.toLowerCase())>=0)return LOTACAO_COLOR[key];}
+    return '#6B7280';
+  }
+
+  function renderShops(cf){
+    container.innerHTML='';
+    ['Miami','Tampa','Orlando'].forEach(function(city){
+      if(cf!=='all'&&cf!==city) return;
+      var items=SHOPS_DATA.filter(function(s){return s.city===city;});
+      if(!items.length) return;
+
+      var cityDiv=document.createElement('div');
+      cityDiv.className='shop-city-block';
+      cityDiv.dataset.city=city;
+      cityDiv.style.cssText='margin-bottom:2.5rem';
+      var cityIcon=city==='Miami'?'🏖️':city==='Tampa'?'🦒':'🏰';
+      cityDiv.innerHTML='<div style="font-size:16px;font-weight:700;color:var(--shop);padding-bottom:.625rem;margin-bottom:1.25rem;border-bottom:3px solid var(--shop-bd);display:flex;align-items:center;gap:.5rem">'
+        +cityIcon+' '+city
+        +' <span style="font-size:11px;background:var(--shop-bg);color:var(--shop);border:1px solid var(--shop-bd);border-radius:20px;padding:2px 10px;font-weight:600">'+items.length+' locais</span>'
+        +'</div>';
+
+      // Sort by day then group
+      items.sort(function(a,b){return getDayOrder(a.bestDay)-getDayOrder(b.bestDay);});
+      var dayGroups={};var dayOrder=[];
+      items.forEach(function(s){
+        var key=s.bestDay||'Sem dia específico';
+        if(!dayGroups[key]){dayGroups[key]=[];dayOrder.push(key);}
+        dayGroups[key].push(s);
+      });
+
+      dayOrder.forEach(function(dayKey){
+        var groupItems=dayGroups[dayKey];
+        var dayLbl=document.createElement('div');
+        dayLbl.style.cssText='font-size:11px;font-weight:700;color:var(--muted);margin-bottom:.625rem;margin-top:1rem;display:flex;align-items:center;gap:.5rem';
+        dayLbl.innerHTML='<span style="background:#DCFCE7;color:#15803D;border-radius:10px;padding:3px 10px;font-size:11px;font-weight:700">'+dayKey+'</span>';
+        cityDiv.appendChild(dayLbl);
+
+        var grid=document.createElement('div');
+        grid.style.cssText='display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:.625rem;margin-bottom:.5rem';
+
+        groupItems.forEach(function(shop){
+          var tagHtml=(shop.tags||[]).map(function(t){
+            return '<span style="font-size:9px;font-weight:600;padding:1px 6px;border-radius:8px;background:var(--shop-bg);color:var(--shop);border:1px solid var(--shop-bd)">'+t+'</span>';
+          }).join('');
+          var buyHtml=(shop.buy||[]).map(function(b){
+            return '<li style="font-size:11px;margin-bottom:3px;line-height:1.4">'+b+'</li>';
+          }).join('');
+          var lotCol=lotacaoColor(shop.lotacao||'');
+
+          var card=document.createElement('div');
+          card.style.cssText='background:var(--card);border:1px solid var(--border);border-left:4px solid var(--shop-bd);border-radius:var(--r);overflow:hidden';
+
+          var tog=document.createElement('span');
+          tog.style.cssText='width:20px;height:20px;border-radius:50%;background:var(--shop-bg);color:var(--shop);border:1px solid var(--shop-bd);display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex-shrink:0;transition:transform .2s;cursor:pointer';
+          tog.textContent='+';
+
+          var sum=document.createElement('div');
+          sum.style.cssText='padding:.625rem .875rem;display:flex;align-items:flex-start;justify-content:space-between;gap:.375rem;cursor:pointer';
+          sum.innerHTML='<div style="flex:1;min-width:0">'
+            +'<div style="display:flex;align-items:center;gap:.375rem;margin-bottom:3px">'
+            +'<span style="font-size:18px">'+shop.emoji+'</span>'
+            +'<div style="font-size:12px;font-weight:700;line-height:1.2">'+shop.name+'</div>'
+            +'</div>'
+            +'<div style="font-size:10px;color:var(--muted);margin-bottom:3px">'+shop.addr+'</div>'
+            +(shop.horario?'<div style="font-size:10px;font-weight:600;color:#2563EB;margin-bottom:2px">🕐 '+shop.horario+'</div>':'')
+            +(shop.lotacao?'<div style="font-size:10px;font-weight:600;color:'+lotCol+';margin-bottom:3px">👥 '+shop.lotacao.split('·')[0].trim()+'</div>':'')
+            +'<div style="display:flex;gap:3px;flex-wrap:wrap">'+tagHtml+'</div>'
+            +'</div>';
+          sum.appendChild(tog);
+
+          var det=document.createElement('div');
+          det.style.cssText='display:none;padding:.625rem .875rem .875rem;border-top:1px solid var(--border);background:var(--bg)';
+          det.innerHTML=(shop.lotacao?'<div style="font-size:10px;font-weight:600;color:'+lotCol+';margin-bottom:.375rem">👥 '+shop.lotacao+'</div>':'')
+            +'<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.5rem">'
+            +'<div style="font-size:10px;color:var(--muted)">🕐 '+shop.hours+'</div>'
+            +'<a href="'+shop.map+'" target="_blank" style="font-size:10px;font-weight:600;color:#1558A8;text-decoration:none;white-space:nowrap">🗺️ Maps</a>'
+            +'</div>'
+            +'<ul style="padding-left:14px;margin:0 0 .5rem">'+buyHtml+'</ul>'
+            +(shop.tip?'<div style="background:#FFFBEB;border:1px solid #FDE68A;border-radius:var(--rs);padding:.375rem .5rem;font-size:10px;color:#854D0E">💡 '+shop.tip+'</div>':'');
+
+          function doToggle(){
+            var open=det.style.display!=='none';
+            det.style.display=open?'none':'block';
+            tog.textContent=open?'+':'−';
+            tog.style.transform=open?'':'rotate(45deg)';
+          }
+          sum.onclick=doToggle;
+
+          card.appendChild(sum);card.appendChild(det);grid.appendChild(card);
+        });
+        cityDiv.appendChild(grid);
+      });
+      container.appendChild(cityDiv);
     });
-  });
+  }
+
+  if(cityFilter){
+    cityFilter.querySelectorAll('button').forEach(function(btn){
+      btn.onclick=function(){
+        cityFilter.querySelectorAll('button').forEach(function(b){b.style.background='var(--bg)';b.style.color='var(--muted)';b.style.border='1px solid var(--border)';});
+        btn.style.background='var(--accent)';btn.style.color='#fff';btn.style.border='1px solid transparent';
+        var t=btn.textContent;
+        activeCityF=t.includes('Miami')?'Miami':t.includes('Tampa')?'Tampa':t.includes('Orlando')?'Orlando':'all';
+        renderShops(activeCityF);
+      };
+    });
+    var fb=cityFilter.querySelector('button');
+    if(fb){fb.style.background='var(--accent)';fb.style.color='#fff';fb.style.border='1px solid transparent';}
+  }
+  renderShops('all');
 }
+
+
+
 
 // ─── TIMELINE ───────────────────────────────────────────
 var TL_DATA=[
@@ -1667,114 +1788,9 @@ var PARK_DATA={
 };
 
 
-var SHOPS_DATA=[
-  // MIAMI
-  {city:'Miami',region:'Brickell / Downtown',order:1,
-   name:'Brickell City Centre',addr:'701 S Miami Ave, Miami, FL 33130',
-   hours:'Seg-Sab: 11:00-21:00 · Dom: 11:00-19:00',
-   rating:4.7,reviews:19681,
-   tags:['Grife','Moda','Gastronomia','Luxo'],
-   best:['Zara','H&M','Saks Fifth Avenue','Apple Store','restaurantes rooftop'],
-   note:'Shopping ultramoderno com arquitetura impressionante. Melhor para compras de grife e moda em Miami. Combine com jantar nos restaurantes do andar superior.',
-   review:'Brickell City Centre é um dos destinos mais impressionantes de Miami. O design open-air com o Climate Ribbon é espetacular. Mix de luxo e acessivel. Perfeito para uma tarde de compras e jantar.',
-   buy:{vestuario:'Sim (Zara, H&M, Saks)',eletronicos:'Apple Store',tenis:'Limitado',oculos:'Saks',perfume:'Sim',souvenirs:'Não'}},
-  {city:'Miami',region:'Aventura',order:2,
-   name:'Aventura Mall',addr:'19501 Biscayne Blvd, Aventura, FL 33180',
-   hours:'Seg-Sab: 10:00-21:30 · Dom: 11:00-19:00',
-   rating:4.5,reviews:52000,
-   tags:['Variedade','Familia','Eletronicos','Moda'],
-   best:['Apple Store','Nike','Zara','H&M','Nordstrom','Forever 21','MAC Cosmetics'],
-   note:'Um dos maiores malls do sul da Florida. Ideal para quem quer tudo num lugar so. Proximo ao hotel em Miami. Bom para o dia de chegada quando quer comprar rapido.',
-   review:'Enorme, bem organizado, tem tudo. Apple Store muito boa. Nordstrom excelente para roupas. Restaurantes bons na praca de alimentacao.',
-   buy:{vestuario:'Excelente (Nordstrom, Zara, H&M)',eletronicos:'Apple Store completa',tenis:'Nike, Foot Locker',oculos:'LensCrafters, lojas de marca',perfume:'Nordstrom, MAC',souvenirs:'Limitado'}},
 
-  // ROAD TRIP
-  {city:'Trajeto Miami → Orlando',region:'Fort Lauderdale',order:3,
-   name:'Las Olas Boulevard',addr:'E Las Olas Blvd, Fort Lauderdale, FL',
-   hours:'Lojas: 10:00-20:00 · Restaurantes: ate 23:00',
-   rating:4.7,reviews:386,
-   tags:['Boutiques','Gastronomia','Passeio','Arte'],
-   best:['boutiques locais','galerias de arte','cafes beira-canal','joalherias'],
-   note:'Parada de 1h no trajeto. Mais para passeio e cafe do que compras. Boutiques unicas, nao encontradas nos malls. Excelente para cafe da manha ou almoco rapido.',
-   review:'Rua linda com canais, boutiques elegantes e cafes. Melhor parada do trajeto para quem vem de Miami.',
-   buy:{vestuario:'Boutiques locais exclusivas',eletronicos:'Nao',tenis:'Nao',oculos:'Algumas oticas locais',perfume:'Nao',souvenirs:'Artesanato local'}},
 
-  // ORLANDO - Shopping days
-  {city:'Orlando',region:'Perto Disney (Sab 05/set recomendado)',order:4,
-   name:'Orlando Vineland Premium Outlets',addr:'8200 Vineland Ave, Orlando, FL 32821',
-   hours:'Seg-Sab: 10:00-21:00 · Dom: 11:00-19:00',
-   rating:4.5,reviews:42224,
-   tags:['Outlet','Nike','Tommy','Gucci','Kate Spade','Levi\'s'],
-   best:['Nike (~40% off)','Tommy Hilfiger','Lacoste','Kate Spade','Coach','Gucci outlet','Versace outlet','Polo Ralph Lauren'],
-   note:'MELHOR PRIMEIRO. O outlet mais proximo da Disney. Mais tranquilo que o da I-Drive. Va aqui primeiro no Sab 05/set antes do Sunday. Pegar cupons na entrada economiza mais 10-20%.',
-   review:'Excelente outlet com marcas de luxo. Gucci e Versace com desconto real. Nike tambem tem bons precos. Recomendo chegar cedo para estacionar bem.',
-   buy:{vestuario:'Excelente — Tommy, Lacoste, Polo RL',eletronicos:'Nao',tenis:'Nike, Adidas, Asics',oculos:'Ray-Ban outlet',perfume:'Algumas marcas',souvenirs:'Nao'}},
-  {city:'Orlando',region:'Perto I-Drive (Dom 06 / Sab 12)',order:5,
-   name:'The Mall at Millenia',addr:'4200 Conroy Rd, Orlando, FL 32839',
-   hours:'Seg-Sex: 11:00-21:00 · Sab: 10:00-21:00 · Dom: 11:00-19:00',
-   rating:4.6,reviews:30007,
-   tags:['Luxo','Grife','Cheesecake Factory','Apple','LV','Gucci'],
-   best:['Louis Vuitton','Gucci','Chanel','Prada','Balenciaga','Burberry','Apple Store','Zara','H&M','Cheesecake Factory'],
-   note:'Shopping mais sofisticado de Orlando. Va aqui NO SABADO 12/set pela manha antes do After Hours do Hollywood Studios a noite. Almoco obrigatorio no Cheesecake Factory.',
-   review:'Incrivel! Louis Vuitton, Gucci, Chanel em um so lugar. Apple Store completa. Cheesecake Factory delicioso. Ambiente elegante e bem mantido.',
-   buy:{vestuario:'Luxo e acessivel (LV, Gucci, Zara, H&M)',eletronicos:'Apple Store completa',tenis:'Nike flagship, Jimmy Choo',oculos:'Sunglass Hut, marcas de luxo',perfume:'Todas as marcas de grife',souvenirs:'World of Disney proximo'}},
-  {city:'Orlando',region:'International Drive (Dom 13/set)',order:6,
-   name:'Outlet Marketplace (I-Drive)',addr:'4951 International Dr, Orlando, FL 32819',
-   hours:'Seg-Sab: 10:00-21:00 · Dom: 10:00-20:00',
-   rating:4.2,reviews:8500,
-   tags:['Clearance','Ponta de estoque','Nike $40','Adidas $7','Levi\'s $20'],
-   best:['Nike Clearance ($20-50)','Adidas Clearance ($7-30)','Levi\'s ($15-30)','Under Armour','Tommy Hilfiger clearance','Reebok'],
-   note:'GARIMPO RAIZ. Lojas de ponta de estoque com precos imbativeis. Melhor para quem quer mais quantidade com menos dinheiro. Va aqui no Dom 13/set pela manha antes do MK Halloween a noite.',
-   review:'Achados incriveis! Nike por $40, Adidas por menos de $10. Nao tem a mesma elegancia do Vineland mas os precos sao bem menores. Perfeito para comprar varios pares de tenis.',
-   buy:{vestuario:'Tudo com precos de ponta de estoque',eletronicos:'Nao',tenis:'MELHOR LUGAR (Nike/Adidas/Reebok clearance)',oculos:'Alguns',perfume:'Nao',souvenirs:'Nao'}},
-  {city:'Orlando',region:'Proximo Disney (fim do dia / a noite)',order:7,
-   name:'Disney Springs',addr:'1486 Buena Vista Dr, Lake Buena Vista, FL 32830',
-   hours:'Diariamente: 10:00-23:00 · Restaurantes ate 00:00',
-   rating:4.6,reviews:65000,
-   tags:['Gratuito','World of Disney','Souvenir','Restaurantes','Entretenimento'],
-   best:['World of Disney (maior loja Disney do mundo)','Star Wars Galactic Outpost','NBA Experience','Lego Store','Under Armour','Tommy Bahama'],
-   note:'Entrada totalmente GRATUITA — sem precisar de ingresso! Ideal para noites apos parques ou domingos. World of Disney e a maior loja da marca no mundo. Bom para souvenirs.',
-   review:'Perfeito para noites depois dos parques. Sem estresse, so caminha e vai as lojas. World of Disney e incrivel. Restaurantes muito bons.',
-   buy:{vestuario:'Under Armour, Tommy Bahama',eletronicos:'Nao',tenis:'Nike Store',oculos:'Nao',perfume:'Nao',souvenirs:'MELHOR LUGAR (World of Disney)'}},
-  {city:'Orlando',region:'I-Drive (noite apos parques)',order:8,
-   name:'Universal CityWalk',addr:'6000 Universal Blvd, Orlando, FL 32819',
-   hours:'Diariamente: 11:00-02:00 (lojas ate 22:00)',
-   rating:4.4,reviews:28000,
-   tags:['Gratuito','Bares','Bowling','Karaoke','Entretenimento'],
-   best:['Universal Studios Store','Hard Rock Cafe','Voodoo Doughnut','Bob Marley\'s','Hollywood Drive-In Golf'],
-   note:'Entrada GRATUITA. Mais entretenimento que compras. Va aqui a noite depois dos parques Universal. Bob Marleys Bar e o karaoke sao imperdives para jovens.',
-   review:'Melhor vida noturna de Orlando! Bowling, karaoke, bares tematicos. Pouco para compras mas muito para diversao. Sempre agitado.',
-   buy:{vestuario:'Universal Studios Store',eletronicos:'Nao',tenis:'Nao',oculos:'Nao',perfume:'Nao',souvenirs:'Universal Studios Store'}},
 
-  // TAMPA
-  {city:'Tampa',region:'Downtown Tampa',order:9,
-   name:'International Plaza & Bay Street',addr:'2223 N West Shore Blvd, Tampa, FL 33607',
-   hours:'Seg-Sab: 10:00-21:00 · Dom: 11:00-19:00',
-   rating:4.5,reviews:12000,
-   tags:['Nordstrom','Apple','Macy\'s','Restaurantes','Bay Street'],
-   best:['Nordstrom (melhor de Tampa)','Apple Store','Macy\'s','Sephora','H&M','Bay Street (bares e restaurantes ao ar livre)'],
-   note:'Melhor shopping de Tampa. Bay Street e a area externa de bares e restaurantes onde acontece a vida noturna. Combine compras durante o dia com jantar e drinks na Bay Street.',
-   review:'Shopping excelente com Nordstrom e Apple. Bay Street a noite e animadissima. Melhor lugar de Tampa para uma noite legal.',
-   buy:{vestuario:'Nordstrom excelente, H&M, Macy\'s',eletronicos:'Apple Store',tenis:'Nordstrom, Foot Locker',oculos:'Nordstrom, LensCrafters',perfume:'Sephora, Nordstrom',souvenirs:'Limitado'}},
-];
-
-var SHOP_DETAIL={
-  'shop-day6a':{name:'Ross Dress for Less',addr:'8290 International Dr, Orlando FL',hours:'Seg-Dom: 09:00-23:00',rating:4.3,phone:'(407) 345-0018',best:['Roupas de marca com 20-70% off','Calcados Nike, Adidas, New Balance','Bolsas e acessorios','Utilidades para casa','Perfumes importados baratos'],buy:{vestuario:'Excelente',tenis:'Muito bom',oculos:'Limitado',perfume:'Otimo custo-beneficio',eletronicos:'Nao'},tip:'Chegue cedo — estoque muda diariamente. Procure na secao de marcas na entrada.'},
-  'shop-day6b':{name:'ICON Park / I-Drive 360',addr:'8375 International Dr, Orlando FL',hours:'Seg-Dom: 10:00-00:00',rating:4.5,phone:'(407) 601-7907',best:['Orlando Eye: roda-gigante 122m vista 360 graus','Madame Tussauds celebridades','Sea Life Aquarium','Bares tematicos e restaurantes','Impossicle Burger e outros food trucks'],buy:{vestuario:'Limitado (lojas de souvenir)',tenis:'Nao',oculos:'Nao',perfume:'Nao',eletronicos:'Nao'},tip:'Melhor a noite — iluminacao da roda-gigante e incrivel. Reserve o Orlando Eye online com desconto.'},
-  'shop-day6c':{name:'Outlet Marketplace I-Drive',addr:'4951 International Dr, Orlando FL',hours:'Seg-Sab: 10:00-21:00 | Dom: 10:00-20:00',rating:4.2,phone:'(407) 352-9600',best:['Nike Clearance: $20-50','Adidas Clearance: $7-30','Levis: $15-30','Under Armour ponta de estoque','Tommy Hilfiger e Reebok clearance'],buy:{vestuario:'Otimo clearance',tenis:'MELHOR LUGAR (menor preco)',oculos:'Alguns',perfume:'Nao',eletronicos:'Nao'},tip:'Va de manha cedo para melhores opcoes de tamanho. Labor Day pode ter descontos extras!'},
-  'shop-day7a':{name:'Vineland Premium Outlets',addr:'8200 Vineland Ave, Orlando FL (perto Disney)',hours:'Seg-Sab: 10:00-21:00 | Dom: 11:00-19:00',rating:4.5,phone:'(407) 238-7787',best:['Nike (40% off)','Tommy Hilfiger','Lacoste','Kate Spade / Coach','Gucci Outlet','Versace Outlet','Polo Ralph Lauren','Ray-Ban','Calvin Klein'],buy:{vestuario:'Excelente marcas premium',tenis:'Nike Adidas Asics',oculos:'Ray-Ban outlet',perfume:'Calvin Klein DKNY',eletronicos:'Nao'},tip:'Labor Day: chegue cedo — lojas podem ter vendas especiais. Pegue cupons extras na entrada (economiza mais 10-20%).'},
-  'shop-day7b':{name:'Florida Mall',addr:'8001 S Orange Blossom Trail, Orlando FL',hours:'Seg-Sab: 10:00-21:00 | Dom: 11:00-19:00',rating:4.4,phone:'(407) 851-6255',best:['Primark (roupas europeias a precos acessiveis)','H&M completo','Zara com colecao americana','Apple Store completa','Forever 21','Nordstrom Rack','Bath & Body Works','Victoria Secret'],buy:{vestuario:'Excelente (Primark, H&M, Zara, Forever 21)',tenis:'Foot Locker, Nike','oculos':'Sunglass Hut','perfume':'Bath & Body Works, Sephora','eletronicos':'Apple Store'},tip:'PRIMARK e o destaque: roupas estilo europeu por precos muito baixos. Nao existe no Brasil. Va cedo pois fila e grande.'},
-  'shop-day7c':{name:'Disney Springs',addr:'1486 Buena Vista Dr, Lake Buena Vista FL',hours:'Diariamente: 10:00-23:00',rating:4.6,phone:'Entrada gratuita',best:['World of Disney (maior loja Disney do mundo)','Star Wars Galactic Outpost','Marvel Avengers Campus Store','Lego Store','Under Armour','Tommy Bahama','NBA Experience'],buy:{vestuario:'Under Armour Tommy Bahama',tenis:'Nike Store',oculos:'Nao',perfume:'Nao',eletronicos:'Nao'},tip:'Entrada totalmente gratuita. Ideal para souvenirs Disney. Reserve jantar no Morimoto Asia ou STK para encerrar o dia.'},
-  'shop-ml':{name:'The Mall at Millenia',addr:'4200 Conroy Rd, Orlando FL',hours:'Seg-Sex: 11:00-21:00 | Sab: 10:00-21:00 | Dom: 11:00-19:00',rating:4.6,phone:'(407) 363-3555',best:['Louis Vuitton','Gucci','Chanel','Prada','Balenciaga','Burberry','Apple Store','Zara','H&M','Cheesecake Factory'],buy:{vestuario:'Luxo e acessivel',tenis:'Nike Jimmy Choo',oculos:'Todas as marcas de grife',perfume:'Dior Chanel LV',eletronicos:'Apple Store completa'},tip:'Almoco obrigatorio no Cheesecake Factory. Dia 12: va de manha e retorne para o HS After Hours de noite.'},
-  'shop-id':{name:'Outlet Marketplace I-Drive',addr:'4951 International Dr, Orlando FL',hours:'Seg-Sab: 10:00-21:00 | Dom: 10:00-20:00',rating:4.2,phone:'(407) 352-9600',best:['Nike Clearance $20-50','Adidas $7-30','Levis $15-30','Under Armour clearance','Reebok e Tommy clearance'],buy:{vestuario:'Tudo com precos de ponta de estoque',tenis:'MELHOR LUGAR menor preco',oculos:'Alguns',perfume:'Nao',eletronicos:'Nao'},tip:'Garimpo raiz. Va de manha para melhores tamanhos disponíveis.'},
-  'd-springs':{name:'Disney Springs',addr:'1486 Buena Vista Dr, Lake Buena Vista FL',hours:'10:00-23:00',rating:4.6,phone:'Entrada gratuita',best:['World of Disney','Star Wars Store','Lego Store','Under Armour'],buy:{vestuario:'Under Armour',tenis:'Nike Store',oculos:'Nao',perfume:'Nao',eletronicos:'Nao'},tip:'Entrada gratuita. Melhor para souvenirs Disney. Va a noite para evitar calor.'},
-  'citywalk':{name:'Universal CityWalk',addr:'6000 Universal Blvd, Orlando FL',hours:'11:00-02:00',rating:4.4,phone:'Entrada gratuita',best:['Bob Marleys Bar','Hard Rock Cafe','Voodoo Doughnut','Bowling','Karaoke','Universal Studios Store'],buy:{vestuario:'Universal Store',tenis:'Nao',oculos:'Nao',perfume:'Nao',eletronicos:'Nao'},tip:'Melhor vida noturna de Orlando. Va apos os parques Universal.'},
-  'shop-vl':{name:'Vineland Premium Outlets',addr:'8200 Vineland Ave, Orlando FL',hours:'Seg-Sab: 10:00-21:00 | Dom: 11:00-19:00',rating:4.5,phone:'(407) 238-7787',best:['Nike','Tommy Hilfiger','Gucci outlet','Kate Spade','Lacoste','Ray-Ban','Polo Ralph Lauren'],buy:{vestuario:'Excelente premium',tenis:'Nike Adidas Asics',oculos:'Ray-Ban',perfume:'Calvin Klein',eletronicos:'Nao'},tip:'Pegue cupons na entrada para desconto extra de 10-20%.'},
-  'walmart':{name:'Walmart Supercenter',addr:'5170 W Irlo Bronson Memorial Hwy, Kissimmee FL',hours:'24 horas',rating:4.1,phone:'(407) 396-1190',best:['Agua e bebidas (muito mais barato que parques)','Lanches e snacks','Protetor solar','Creme anti-mosquito','Produtos de higiene','Roupas basicas baratas'],buy:{vestuario:'Basico e economico',tenis:'Nao',oculos:'Simples',perfume:'Nao',eletronicos:'Carregadores cabos basicos'},tip:'Pare aqui no dia 5 ao chegar em Orlando. Leve agua para os dias de parque — economiza muito!'},
-  'tampa-arm':{name:'Armature Works Tampa',addr:'1910 N Ola Ave, Tampa FL',hours:'Seg-Qui: 07:30-21:00 | Sex-Dom: 07:30-22:00',rating:4.7,phone:'(813) 575-9585',best:['Mercado gourmet com dezenas de opcoes','Bares artesanais','Vista do rio Hillsborough','Rooftop bar','Brunch aos finais de semana'],buy:{vestuario:'Nao',tenis:'Nao',oculos:'Nao',perfume:'Nao',eletronicos:'Nao'},tip:'Melhor jantar de Tampa. Reserve uma mesa no rooftop para o por do sol sobre o rio.'},
-};
-
-function getShopDetail(cardId){return SHOP_DETAIL[cardId]||null;}
 
 var SHOP_DETAIL={
   'shop-day6a':{name:'Ross Dress for Less',addr:'8290 International Dr, Orlando FL',hours:'Seg-Dom: 09:00-23:00',rating:4.3,phone:'(407) 345-0018',best:['Roupas de marca com 20-70% off','Calcados Nike, Adidas, New Balance','Bolsas e acessorios','Perfumes importados baratos'],buy:{vestuario:'Excelente',tenis:'Muito bom',oculos:'Limitado',perfume:'Otimo custo-beneficio',eletronicos:'Nao'},tip:'Chegue cedo — estoque muda diariamente.'},
@@ -1788,49 +1804,12 @@ var SHOP_DETAIL={
   'd-springs':{name:'Disney Springs',addr:'1486 Buena Vista Dr, Lake Buena Vista FL',hours:'10:00-23:00',rating:4.6,phone:'Entrada gratuita',best:['World of Disney','Star Wars Store','Lego Store'],buy:{vestuario:'Under Armour',tenis:'Nike Store',oculos:'Nao',perfume:'Nao',eletronicos:'Nao'},tip:'Entrada gratuita. Va a noite para evitar calor.'},
   'wallet':{name:'Walmart Supercenter',addr:'5170 W Irlo Bronson Memorial Hwy, Kissimmee FL',hours:'24 horas',rating:4.1,phone:'(407) 396-1190',best:['Agua e bebidas','Lanches e snacks','Protetor solar','Produtos de higiene'],buy:{vestuario:'Basico e economico',tenis:'Nao',oculos:'Simples',perfume:'Nao',eletronicos:'Carregadores e cabos'},tip:'Pare aqui ao chegar em Orlando. Leve agua para os parques — economiza muito!'},
 };
-function getShopDetail(cardId){return SHOP_DETAIL[cardId]||null;}
+
 
 
   
 
-function buildShops(){
-  shopsBuilt=true;
-  var container=document.getElementById('shopsContainer');
-  var cities=['Miami','Trajeto Miami → Orlando','Orlando','Tampa'];
-  var orderBadges={'Miami':'01–03/set','Trajeto Miami → Orlando':'Dia 3 · parada','Tampa':'03–05/set','Orlando':'05–18/set'};
-  cities.forEach(function(city){
-    var shops=SHOPS_DATA.filter(function(s){return s.city===city;});
-    if(!shops.length)return;
-    var h=document.createElement('div');
-    h.className='shop-section-title shop-city-block';h.dataset.city=city;
-    h.innerHTML='📍 '+city+'<span style="font-size:11px;background:var(--shop-bg);color:var(--shop);border:1px solid var(--shop-bd);padding:2px 8px;border-radius:20px;font-weight:600;margin-left:4px">'+(orderBadges[city]||'')+'</span>';
-    container.appendChild(h);
-    shops.sort(function(a,b){return a.order-b.order;}).forEach(function(shop){
-      var card=document.createElement('div');card.className='shop-card shop-city-block';card.dataset.city=city;
-      var buyRows=Object.entries(shop.buy).map(function(e){
-        var label=e[0],val=e[1];
-        var labels={vestuario:'👗 Vestuário',eletronicos:'📱 Eletrônicos',tenis:'👟 Tênis',oculos:'🕶️ Óculos',perfume:'🌸 Perfume',souvenirs:'🎁 Souvenirs'};
-        var good=val!=='Nao'&&val!=='Não'&&val!=='Limitado';
-        return '<div style="font-size:11px;padding:3px 0;border-bottom:1px solid rgba(180,83,9,.1);display:flex;gap:8px"><span style="min-width:110px;color:var(--muted)">'+(labels[label]||label)+'</span><span style="font-weight:500;color:'+(good?'var(--shop)':'#999')+'">'+val+'</span></div>';
-      }).join('');
-      var tagHtml=shop.tags.map(function(t){return '<span class="shop-tag">'+t+'</span>';}).join('');
-      var bestHtml=shop.best.map(function(b){return '<li style="font-size:12px;margin-bottom:2px">'+b+'</li>';}).join('');
-      card.innerHTML='<div class="shop-order-badge">📍 '+shop.region+'</div>'
-        +'<h3>'+shop.name+'</h3>'
-        +'<div class="shop-addr">'+shop.addr+'</div>'
-        +'<div class="shop-tags">'+tagHtml+'</div>'
-        +'<div class="shop-meta">'
-        +'<div class="shop-meta-box"><label>Horário</label><p>'+shop.hours+'</p></div>'
-        +'<div class="shop-meta-box"><label>Avaliação</label><p><span class="shop-rating">⭐ '+shop.rating.toFixed(1)+'</span> <span style="font-size:11px;color:var(--muted)">('+shop.reviews.toLocaleString()+ ' avaliações)</span></p></div>'
-        +'</div>'
-        +'<div style="margin-bottom:.75rem"><strong style="font-size:12px;color:var(--shop)">O que comprar:</strong><div style="margin-top:4px">'+buyRows+'</div></div>'
-        +'<div style="margin-bottom:.75rem"><strong style="font-size:12px;color:var(--shop)">Destaques:</strong><ul style="padding-left:14px;margin-top:4px">'+bestHtml+'</ul></div>'
-        +'<div style="font-size:12px;color:var(--text);margin-bottom:.5rem">'+shop.note+'</div>'
-        +'<div class="shop-review">"'+shop.review+'"</div>';
-      container.appendChild(card);
-    });
-  });
-}
+
 
 // ─── TIMELINE ───────────────────────────────────────────
 var TL_DATA=[
@@ -2139,166 +2118,416 @@ function sw(n,b){
 }
 
 
-function filterShops(city,btn){
-  document.querySelectorAll('#shopCityFilter button').forEach(function(b){
-    b.style.background='var(--bg)';b.style.color='var(--muted)';b.style.border='1px solid var(--border)';
-  });
-  btn.style.background='var(--accent)';btn.style.color='#fff';btn.style.border='1px solid transparent';
-  document.querySelectorAll('.shop-city-block').forEach(function(d){
-    d.style.display=(city==='all'||d.dataset.city===city)?'block':'none';
-  });
-}
+
 
 var MAP_PLACES=[
-  {type:'hotel',city:'miami',  name:'Shine Suites Balcony Studio 7',  addr:'5445 Collins Ave, Miami Beach FL', icon:'🏨', color:'#1A6FC4'},
-  {type:'hotel',city:'tampa',  name:'Hampton Inn Hilton Tampa',        addr:'3333 E Busch Blvd, Tampa FL',      icon:'🏨', color:'#8B4500'},
-  {type:'hotel',city:'orlando',name:'Hotel Monreale IDrive',           addr:'8300 Jamaican Court, Orlando FL',  icon:'🏨', color:'#0F6E56'},
-  {type:'park', city:'orlando',name:'Magic Kingdom',                   addr:'Walt Disney World, Orlando FL',    icon:'🏰', color:'#C1272D'},
-  {type:'park', city:'orlando',name:'EPCOT',                           addr:'Walt Disney World, Orlando FL',    icon:'🌍', color:'#C1272D'},
-  {type:'park', city:'orlando',name:'Hollywood Studios',               addr:'Walt Disney World, Orlando FL',    icon:'🎬', color:'#C1272D'},
-  {type:'park', city:'orlando',name:'Animal Kingdom',                  addr:'Walt Disney World, Orlando FL',    icon:'🦁', color:'#C1272D'},
-  {type:'park', city:'orlando',name:'Universal Studios Florida',       addr:'6000 Universal Blvd, Orlando FL',  icon:'🎪', color:'#1B4FBB'},
-  {type:'park', city:'orlando',name:'Islands of Adventure',            addr:'6000 Universal Blvd, Orlando FL',  icon:'🎢', color:'#1B4FBB'},
-  {type:'park', city:'orlando',name:'Epic Universe',                   addr:'Universal Epic Blvd, Orlando FL',  icon:'🚀', color:'#1B4FBB'},
-  {type:'park', city:'orlando',name:'SeaWorld Orlando',                addr:'7007 SeaWorld Dr, Orlando FL',     icon:'🐋', color:'#0284C7'},
-  {type:'park', city:'orlando',name:'Disney Springs',                  addr:'1486 Buena Vista Dr, Orlando FL',  icon:'🛍️',color:'#C1272D'},
-  {type:'park', city:'tampa',  name:'Busch Gardens Tampa Bay',         addr:'10165 N McKinley Dr, Tampa FL',    icon:'🦒', color:'#0284C7'},
-  {type:'shop', city:'miami',  name:'Aventura Mall',                   addr:'19501 Biscayne Blvd, Aventura FL', icon:'🏬', color:'#B45309'},
-  {type:'shop', city:'miami',  name:'Brickell City Centre',            addr:'701 S Miami Ave, Miami FL',         icon:'🏙️',color:'#B45309'},
-  {type:'shop', city:'orlando',name:'Vineland Premium Outlets',        addr:'8200 Vineland Ave, Orlando FL',    icon:'💎', color:'#B45309'},
-  {type:'shop', city:'orlando',name:'Florida Mall',                    addr:'8001 S OBT, Orlando FL',           icon:'🏪', color:'#B45309'},
-  {type:'shop', city:'orlando',name:'Outlet Marketplace I-Drive',      addr:'4951 International Dr, Orlando FL',icon:'👟', color:'#B45309'},
-  {type:'shop', city:'orlando',name:'Mall at Millenia',                addr:'4200 Conroy Rd, Orlando FL',       icon:'💎', color:'#B45309'},
-  {type:'shop', city:'orlando',name:'Walmart Supercenter',             addr:'5170 W Irlo Bronson, Kissimmee FL',icon:'🛒', color:'#B45309'},
-  {type:'stop', city:'miami',  name:'South Beach / Ocean Drive',       addr:'Ocean Dr, Miami Beach FL',         icon:'🏖️',color:'#1A6FC4'},
-  {type:'stop', city:'miami',  name:'Wynwood Walls',                   addr:'2516 NW 2nd Ave, Miami FL',        icon:'🎨', color:'#1A6FC4'},
-  {type:'stop', city:'tampa',  name:'Armature Works',                  addr:'1910 N Ola Ave, Tampa FL',         icon:'🌆', color:'#8B4500'},
-  {type:'stop', city:'tampa',  name:'Ybor City',                       addr:'Ybor City, Tampa FL',              icon:'🌙', color:'#8B4500'},
+  // HOTELS
+  {type:'hotel',city:'miami',  name:'Shine Suites Balcony Studio 7',    addr:'5445 Collins Ave, Miami Beach FL',          icon:'🏨', color:'#1A6FC4', lat:25.8142, lng:-80.1219, sub:'Check-in 01/set · 2 noites'},
+  {type:'hotel',city:'tampa',  name:'Hampton Inn & Suites Tampa',        addr:'3333 E Busch Blvd, Tampa FL',               icon:'🏨', color:'#8B4500', lat:28.0325, lng:-82.4233, sub:'Check-in 03/set · 2 noites · Café incluso'},
+  {type:'hotel',city:'orlando',name:'Wyndham I-Drive Avanti Resort',     addr:'6515 International Drive, Orlando FL',      icon:'🏨', color:'#0F6E56', lat:28.4583, lng:-81.4706, sub:'Check-in 05/set · 13 noites'},
+  // DISNEY PARKS
+  {type:'park', city:'orlando',name:'Magic Kingdom',                     addr:'Walt Disney World, Orlando FL',             icon:'🏰', color:'#C1272D', lat:28.4177, lng:-81.5812, sub:'Dia 16/set · ⭐ Prioridade máxima'},
+  {type:'park', city:'orlando',name:'EPCOT',                             addr:'Walt Disney World, Orlando FL',             icon:'🌍', color:'#C1272D', lat:28.3747, lng:-81.5494, sub:'Dia 14/set'},
+  {type:'park', city:'orlando',name:'Hollywood Studios',                 addr:'Walt Disney World, Orlando FL',             icon:'🎬', color:'#C1272D', lat:28.3575, lng:-81.5583, sub:'Dia 15/set'},
+  {type:'park', city:'orlando',name:'Animal Kingdom',                    addr:'Walt Disney World, Orlando FL',             icon:'🦁', color:'#C1272D', lat:28.3553, lng:-81.5901, sub:'Dia 11/set'},
+  {type:'park', city:'orlando',name:'Disney Springs',                    addr:'1486 Buena Vista Dr, Orlando FL',           icon:'🏰', color:'#C1272D', lat:28.3701, lng:-81.5163, sub:'Dia 07/13 set'},
+  // UNIVERSAL PARKS
+  {type:'park', city:'orlando',name:'Epic Universe',                     addr:'Universal Epic Blvd, Orlando FL',           icon:'🚀', color:'#1B4FBB', lat:28.4270, lng:-81.4643, sub:'Dia 08/set · Novo parque 2025'},
+  {type:'park', city:'orlando',name:'Islands of Adventure',              addr:'6000 Universal Blvd, Orlando FL',           icon:'🎢', color:'#1B4FBB', lat:28.4719, lng:-81.4724, sub:'Dia 09/set'},
+  {type:'park', city:'orlando',name:'Universal Studios Florida',         addr:'6000 Universal Blvd, Orlando FL',           icon:'🎪', color:'#1B4FBB', lat:28.4748, lng:-81.4674, sub:'Dia 10/set'},
+  // SEAWORLD GROUP
+  {type:'park', city:'orlando',name:'SeaWorld Orlando',                  addr:'7007 SeaWorld Dr, Orlando FL',              icon:'🐋', color:'#0284C7', lat:28.4120, lng:-81.4609, sub:'Dia 17/set · All Day Dining incluso'},
+  {type:'park', city:'tampa',  name:'Busch Gardens Tampa Bay',           addr:'10165 N McKinley Dr, Tampa FL',             icon:'🦒', color:'#0284C7', lat:28.0378, lng:-82.4208, sub:'Dia 04/set · All Day Dining incluso'},
+  // SHOPS - MIAMI
+  {type:'shop', city:'miami',  name:'Aventura Mall',                     addr:'19501 Biscayne Blvd, Aventura FL',          icon:'💎', color:'#B45309', lat:25.9564, lng:-80.1395, sub:'1.5h de Miami · Zara, H&M, Apple, Bloomingdales'},
+  {type:'shop', city:'miami',  name:'Brickell City Centre',              addr:'701 S Miami Ave, Miami FL',                 icon:'🏙️', color:'#B45309', lat:25.7627, lng:-80.1940, sub:'Centro de Miami · Saks, Hunter, Valentino'},
+  {type:'shop', city:'miami',  name:'Dolphin Mall',                      addr:'11401 NW 12th St, Miami FL',                icon:'🛍️', color:'#B45309', lat:25.7544, lng:-80.3808, sub:'Outlet · Saks Off 5th, GAP, Under Armour'},
+  // SHOPS - ORLANDO
+  {type:'shop', city:'orlando',name:'Vineland Premium Outlets',          addr:'8200 Vineland Ave, Orlando FL',             icon:'💎', color:'#B45309', lat:28.3808, lng:-81.5135, sub:'Melhor outlet · Coach, Michael Kors, Nike, Polo'},
+  {type:'shop', city:'orlando',name:'Florida Mall',                      addr:'8001 S Orange Blossom Trail, Orlando FL',   icon:'🏪', color:'#B45309', lat:28.4534, lng:-81.4261, sub:'Bath & Body, Macys, Forever 21, Victorias Secret'},
+  {type:'shop', city:'orlando',name:'Outlet Marketplace I-Drive',        addr:'4951 International Dr, Orlando FL',         icon:'👟', color:'#B45309', lat:28.4342, lng:-81.4627, sub:'Proximo ao hotel · Nike, Adidas, Levis'},
+  {type:'shop', city:'orlando',name:'Mall at Millenia',                  addr:'4200 Conroy Rd, Orlando FL',                icon:'✨', color:'#B45309', lat:28.4826, lng:-81.4430, sub:'Luxo · Louis Vuitton, Gucci, Tiffany, Apple'},
+  {type:'shop', city:'orlando',name:'Walmart Supercenter (Kissimmee)',   addr:'5170 W Irlo Bronson Hwy, Kissimmee FL',     icon:'🛒', color:'#B45309', lat:28.2920, lng:-81.4690, sub:'Dia 05/set · Compras de chegada e snacks'},
+  {type:'shop', city:'orlando',name:'Disney Springs Shopping',           addr:'1486 Buena Vista Dr, Orlando FL',           icon:'🛍️', color:'#C1272D', lat:28.3696, lng:-81.5157, sub:'World of Disney, LEGO, Nike'},
+  // STOPS - MIAMI
+  {type:'stop', city:'miami',  name:'South Beach / Ocean Drive',         addr:'Ocean Dr, Miami Beach FL',                  icon:'🏖️', color:'#1A6FC4', lat:25.7826, lng:-80.1300, sub:'Dia 02/set · Praia, Art Deco, bares'},
+  {type:'stop', city:'miami',  name:'Wynwood Walls',                     addr:'2516 NW 2nd Ave, Miami FL',                 icon:'🎨', color:'#1A6FC4', lat:25.8018, lng:-80.1997, sub:'Dia 02/set · Arte urbana e gastronomia'},
+  {type:'stop', city:'miami',  name:'Little Havana',                     addr:'SW 8th St, Miami FL',                       icon:'🎺', color:'#1A6FC4', lat:25.7701, lng:-80.2144, sub:'Dia 02/set · Cultura cubana · Calle Ocho'},
+  {type:'stop', city:'miami',  name:'Boca Raton (parada)',               addr:'Boca Raton, FL',                            icon:'🌴', color:'#1A6FC4', lat:26.3583, lng:-80.0831, sub:'Dia 03/set · Parada a caminho de Tampa'},
+  {type:'stop', city:'miami',  name:'Bok Tower Gardens (parada)',        addr:'1151 Tower Blvd, Lake Wales FL',             icon:'🗼', color:'#8B4500', lat:27.8944, lng:-81.5889, sub:'Dia 03/set · Parada entre Miami e Tampa'},
+  // STOPS - TAMPA
+  {type:'stop', city:'tampa',  name:'Ybor City',                        addr:'Ybor City, Tampa FL',                        icon:'🌙', color:'#8B4500', lat:27.9608, lng:-82.4397, sub:'Jantar e vida noturna'},
+  {type:'stop', city:'tampa',  name:'Armature Works',                   addr:'1910 N Ola Ave, Tampa FL',                   icon:'🌆', color:'#8B4500', lat:27.9560, lng:-82.4546, sub:'Food hall à beira do rio Hillsborough'},
+  {type:'stop', city:'tampa',  name:'Plant City / Strawberry Festival', addr:'Plant City, FL',                             icon:'🍓', color:'#8B4500', lat:28.0184, lng:-82.1190, sub:'Dia 05/set · Parada no trajeto Tampa→Orlando'},
+  // STOPS - ORLANDO
+  {type:'stop', city:'orlando',name:'ICON Park Orlando',                 addr:'8375 International Dr, Orlando FL',          icon:'🎡', color:'#0F6E56', lat:28.4375, lng:-81.4660, sub:'Roda gigante + atrações I-Drive'},
+  {type:'stop', city:'orlando',name:'International Drive (I-Drive)',     addr:'International Dr, Orlando FL',               icon:'🌃', color:'#0F6E56', lat:28.4400, lng:-81.4670, sub:'Shopping, restaurantes, entretenimento'},
+  // AIRPORTS
+  {type:'airport',city:'miami',  name:'Aeroporto Miami (MIA)',               addr:'2100 NW 42nd Ave, Miami FL 33142',            icon:'✈️', color:'#475569', lat:25.7959, lng:-80.2870, sub:'Chegada 01/set 17:25 · Saida 18/set 22:30 · LA8194/LA8199'},
+  {type:'airport',city:'tampa',  name:'Aeroporto Tampa (TPA)',               addr:'4100 George J Bean Pkwy, Tampa FL 33607',     icon:'✈️', color:'#475569', lat:27.9755, lng:-82.5332, sub:'Proximo a Tampa · nao utilizado no roteiro'},
+  {type:'airport',city:'orlando',name:'Aeroporto Orlando (MCO)',             addr:'1 Jeff Fuqua Blvd, Orlando FL 32827',         icon:'✈️', color:'#475569', lat:28.4312, lng:-81.3081, sub:'Referencia · carro proprio no roteiro'},
 ];
 
+
 function buildMapa(){
-  var cityBtns=document.getElementById('mapaCityBtns');
   var typeBtns=document.getElementById('mapaTypeBtns');
-  if(!cityBtns) return;
-  
-  var activeCity='all', activeType='all';
-  
-  function applyBtnStyle(btn,active){
-    btn.style.background=active?'var(--accent)':'var(--bg)';
-    btn.style.color=active?'#fff':'var(--muted)';
-    btn.style.border=active?'1px solid transparent':'1px solid var(--border)';
-  }
-  
-  function render(){
-    var filtered=MAP_PLACES.filter(function(p){
-      return(activeCity==='all'||p.city===activeCity)&&(activeType==='all'||p.type===activeType);
-    });
-    var groups={hotel:[],park:[],shop:[],stop:[]};
-    filtered.forEach(function(p){if(groups[p.type])groups[p.type].push(p);});
-    var labels={hotel:'🏨 Hotéis',park:'🎡 Parques',shop:'🛍️ Compras',stop:'📍 Pontos turísticos'};
-    var cityLabel={miami:'Miami',tampa:'Tampa',orlando:'Orlando'};
-    var cityColor={miami:'var(--miami)',tampa:'var(--tampa)',orlando:'var(--orlando)'};
-    var listHtml='';
-    ['hotel','park','shop','stop'].forEach(function(t){
-      if(!groups[t].length) return;
-      listHtml+='<div style="margin-bottom:1.25rem"><div style="font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:.5rem;padding-bottom:.375rem;border-bottom:2px solid var(--border)">'+labels[t]+'</div><div style="display:flex;flex-direction:column;gap:.375rem">';
+  if(!typeBtns) return;
+
+  var activeTypes=new Set(['hotel','park','shop','stop','airport']);
+  var TYPE_CFG={
+    hotel:  {label:'🏨 Hotéis',    color:'#0F6E56'},
+    park:   {label:'🎡 Parques',   color:'#C1272D'},
+    shop:   {label:'🛍️ Compras',  color:'#B45309'},
+    stop:   {label:'📍 Turístico', color:'#6B7280'},
+    airport:{label:'✈️ Aeroportos',color:'#475569'},
+  };
+  var CITY_COLOR={miami:'var(--miami)',tampa:'var(--tampa)',orlando:'var(--orlando)'};
+
+  function renderCity(city){
+    var items=MAP_PLACES.filter(function(p){return p.city===city&&activeTypes.has(p.type);});
+    var listEl=document.getElementById('list-'+city);
+    var cntEl=document.getElementById(city+'-count');
+    if(cntEl) cntEl.textContent=items.length;
+    if(!listEl) return;
+    listEl.innerHTML='';
+    if(!items.length){listEl.innerHTML='<div style="font-size:11px;color:var(--muted);padding:.5rem;text-align:center">Nenhum ponto para este filtro</div>';return;}
+
+    // Group by type
+    var groups={hotel:[],park:[],shop:[],stop:[],airport:[]};
+    items.forEach(function(p){if(groups[p.type])groups[p.type].push(p);});
+
+    ['airport','hotel','park','shop','stop'].forEach(function(t){
+      if(!groups[t]||!groups[t].length) return;
       groups[t].forEach(function(p){
-        listHtml+='<div style="display:flex;align-items:center;gap:.5rem;padding:.5rem .75rem;background:var(--bg);border-radius:var(--rs);border-left:3px solid '+p.color+'">'
-          +'<span style="font-size:16px">'+p.icon+'</span>'
-          +'<div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:600">'+p.name+'</div><div style="font-size:10px;color:var(--muted)">'+p.addr+'</div></div>'
-          +'<span style="font-size:10px;font-weight:600;color:'+cityColor[p.city]+';flex-shrink:0">'+cityLabel[p.city]+'</span>'
-          +'</div>';
+        var row=document.createElement('a');
+        row.href='https://maps.google.com/?q='+encodeURIComponent(p.lat+','+p.lng);
+        row.target='_blank';
+        row.style.cssText='display:flex;align-items:center;gap:.375rem;padding:.25rem .375rem;border-radius:6px;text-decoration:none;color:inherit;font-size:11px;border-left:3px solid '+p.color+';margin-bottom:2px;background:var(--bg);';
+        row.onmouseover=function(){this.style.background='#F1F5F9';};
+        row.onmouseout=function(){this.style.background='var(--bg)';};
+        row.innerHTML='<span style="font-size:14px;flex-shrink:0">'+p.icon+'</span>'
+          +'<div style="flex:1;min-width:0"><div style="font-weight:600;font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">'+p.name+'</div>'
+          +(p.sub?'<div style="font-size:9px;color:var(--accent)">'+p.sub+'</div>':'')+'</div>'
+          +'<span style="font-size:9px;color:#1558A8;flex-shrink:0">↗</span>';
+        listEl.appendChild(row);
       });
-      listHtml+='</div></div>';
     });
-    var list=document.getElementById('mapaList');
-    if(list) list.innerHTML=listHtml;
-    var iframe=document.getElementById('mapaIframe');
-    if(iframe){
-      var q=activeCity==='miami'?'Miami,Florida':activeCity==='tampa'?'Tampa,Florida':'Orlando,Florida';
-      iframe.src='https://maps.google.com/maps?q='+encodeURIComponent(q)+'&output=embed&zoom='+(activeCity==='all'?'7':'11');
+
+    // Update map iframe with markers for this city
+    var mapIframe=document.getElementById('map-'+city);
+    if(mapIframe&&items.length>0){
+      var lats=items.map(function(p){return p.lat;});
+      var lngs=items.map(function(p){return p.lng;});
+      var pad=0.03;
+      var bbox=(Math.min.apply(null,lngs)-pad)+','+(Math.min.apply(null,lats)-pad)+','+(Math.max.apply(null,lngs)+pad)+','+(Math.max.apply(null,lats)+pad);
+      var markers=items.map(function(p){return 'mlat='+p.lat+'&mlon='+p.lng;}).join('&');
+      mapIframe.src='https://www.openstreetmap.org/export/embed.html?bbox='+bbox+'&layer=mapnik&'+markers;
     }
   }
-  
-  var cDefs=[{l:'Todos',v:'all'},{l:'🏖️ Miami',v:'miami'},{l:'🦒 Tampa',v:'tampa'},{l:'🏰 Orlando',v:'orlando'}];
-  var tDefs=[{l:'Todos',v:'all'},{l:'🏨 Hotéis',v:'hotel'},{l:'🎡 Parques',v:'park'},{l:'🛍️ Compras',v:'shop'},{l:'📍 Pontos',v:'stop'}];
-  
-  function makeBtns(defs,container,activeV,setter){
-    defs.forEach(function(d){
-      var btn=document.createElement('button');
-      btn.textContent=d.l;
-      btn.style.cssText='padding:.35rem .875rem;border-radius:20px;font-size:12px;font-weight:500;cursor:pointer;white-space:nowrap;';
-      applyBtnStyle(btn,d.v===activeV);
-      btn.onclick=function(){
-        container.querySelectorAll('button').forEach(function(b){applyBtnStyle(b,false);});
-        applyBtnStyle(btn,true);
-        setter(d.v);render();
-      };
-      container.appendChild(btn);
-    });
+
+  function renderAll(){
+    ['miami','tampa','orlando'].forEach(function(c){renderCity(c);});
   }
-  
-  makeBtns(cDefs,cityBtns,activeCity,function(v){activeCity=v;});
-  makeBtns(tDefs,typeBtns,activeType,function(v){activeType=v;});
-  render();
+
+  // Type buttons (all active by default)
+  ['hotel','park','shop','stop','airport'].forEach(function(t){
+    var d=TYPE_CFG[t];
+    var btn=document.createElement('button');
+    btn.textContent=d.label;
+    btn.style.cssText='padding:.35rem .875rem;border-radius:20px;font-size:12px;cursor:pointer;white-space:nowrap;transition:all .15s;background:'+d.color+';color:#fff;border:1px solid transparent;font-weight:700';
+    btn.onclick=function(){
+      if(activeTypes.has(t)){
+        if(activeTypes.size===1) return;
+        activeTypes.delete(t);
+        btn.style.cssText='padding:.35rem .875rem;border-radius:20px;font-size:12px;cursor:pointer;background:var(--bg);color:var(--muted);border:1px solid var(--border);font-weight:500';
+      } else {
+        activeTypes.add(t);
+        btn.style.cssText='padding:.35rem .875rem;border-radius:20px;font-size:12px;cursor:pointer;background:'+d.color+';color:#fff;border:1px solid transparent;font-weight:700';
+      }
+      renderAll();
+    };
+    typeBtns.appendChild(btn);
+  });
+
+  renderAll();
 }
 
 
+// Compute today once
+var TODAY_MS=(function(){try{return new Date().getTime();}catch(e){return 0;}})();
+function dueDate(mo){
+  var map={'2026-05':new Date(2026,5,8),'2026-06':new Date(2026,6,8),'2026-07':new Date(2026,7,8),
+           '2026-08':new Date(2026,8,8),'2026-09':new Date(2026,9,8),'2026-10':new Date(2026,10,8),'2026-11':new Date(2026,11,8)};
+  return map[mo]?map[mo].getTime():Infinity;
+}
+function isEffectivelyPaid(row){
+  var status=row.getAttribute('data-status');
+  var mo=row.getAttribute('data-month');
+  if(status==='pix') return true;
+  if(status==='charged'||status==='future'){
+    // if due date < today = already charged/paid
+    return dueDate(mo) < TODAY_MS;
+  }
+  return false;
+}
+
+var TODAY_MS=(function(){try{return new Date().getTime();}catch(e){return 0;}})();
+var DUE_DATES={'2026-05':new Date(2026,5,8).getTime(),'2026-06':new Date(2026,6,8).getTime(),'2026-07':new Date(2026,7,8).getTime(),'2026-08':new Date(2026,8,8).getTime(),'2026-09':new Date(2026,9,8).getTime(),'2026-10':new Date(2026,10,8).getTime(),'2026-11':new Date(2026,11,8).getTime()};
+function isPaid(row){var s=row.getAttribute('data-status');var mo=row.getAttribute('data-month');if(s==='pix')return true;var due=DUE_DATES[mo]||Infinity;return due<TODAY_MS;}
 function pagFilter(status,btn){
-  document.querySelectorAll('#pagamentos [onclick]').forEach(function(b){b.style.opacity='.65';});
-  btn.style.opacity='1';
+  document.querySelectorAll('.pag-sum-card').forEach(function(c){c.style.opacity='1';c.style.transform='scale(1)';});
+  if(btn&&btn.classList&&btn.classList.contains('pag-sum-card')){document.querySelectorAll('.pag-sum-card').forEach(function(c){c.style.opacity='.6';});btn.style.opacity='1';btn.style.transform='scale(1.04)';}
   document.querySelectorAll('.pag-row').forEach(function(r){
-    var s=r.getAttribute('data-status');
-    if(status==='all') r.style.display='';
-    else if(status==='future') r.style.display=(s==='future'||s==='est')?'':'none';
-    else r.style.display=s===status?'':'none';
+    var s=r.getAttribute('data-status');var paid=isPaid(r);
+    if(status==='all')r.style.display='';
+    else if(status==='paid')r.style.display=paid?'':'none';
+    else if(status==='topay')r.style.display=(!paid&&s!=='est')?'':'none';
+    else if(status==='est')r.style.display=(s==='est')?'':'none';
+    else r.style.display=(s===status)?'':'none';
+  });
+  document.querySelectorAll('.pag-month-block').forEach(function(b){var vis=Array.from(b.querySelectorAll('.pag-row')).some(function(r){return r.style.display!=='none';});b.style.display=vis?'':'none';});
+}
+
+
+function pagFilterMonth(month, btn){
+  // update month filter buttons
+  document.querySelectorAll('.pag-filter-btn').forEach(function(b){b.classList.remove('active');});
+  if(btn&&btn.classList&&btn.classList.contains('pag-filter-btn')) btn.classList.add('active');
+  // highlight chart bar
+  document.querySelectorAll('.chart-col').forEach(function(c){c.classList.remove('active-month');c.querySelector('.chart-bar-stack').style.opacity='0.5';});
+  if(month==='all'){
+    document.querySelectorAll('.chart-bar-stack').forEach(function(b){b.style.opacity='1';});
+  } else {
+    var col=document.getElementById('chart-'+month);
+    if(col){col.classList.add('active-month');col.querySelector('.chart-bar-stack').style.opacity='1';}
+  }
+  // show/hide month blocks
+  document.querySelectorAll('.pag-month-block').forEach(function(b){
+    b.style.display=(month==='all'||b.id==='pmo-'+month)?'':'none';
   });
 }
 
-buildChecklist();
 
 </script>
 <!-- ═══ MAPA ═══ -->
 <div id="mapa" class="tab-content">
-<h2 style="font-size:20px;font-weight:500;font-family:'DM Serif Display',serif;margin-bottom:1rem">🗺️ Mapa da Viagem</h2>
-<div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:.625rem" id="mapaCityBtns"></div>
-<div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1rem" id="mapaTypeBtns"></div>
-<div style="display:grid;grid-template-columns:1fr 320px;gap:1rem;align-items:start">
-  <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;height:480px">
-    <iframe id="mapaIframe" src="https://maps.google.com/maps?q=Orlando,Florida&amp;output=embed&amp;zoom=9"
-      width="100%" height="100%" style="border:0" allowfullscreen loading="lazy"></iframe>
-  </div>
-  <div style="max-height:500px;overflow-y:auto" id="mapaList"></div>
+<h2 style="font-size:20px;font-weight:500;font-family:'DM Serif Display',serif;margin-bottom:.75rem">🗺️ Mapa da Viagem</h2>
+
+<!-- Type filter (multi-select) -->
+<div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1rem;align-items:center">
+  <span style="font-size:11px;font-weight:600;color:var(--muted)">Mostrar:</span>
+  <div id="mapaTypeBtns" style="display:flex;gap:.375rem;flex-wrap:wrap"></div>
+  <span style="font-size:10px;color:var(--muted);margin-left:.5rem">Clique para ligar/desligar · múltipla seleção</span>
 </div>
+
+<!-- 3 city maps side by side -->
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-bottom:1rem">
+
+  <!-- Miami -->
+  <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--r);overflow:hidden">
+    <div style="background:var(--miami-bg);padding:.625rem 1rem;display:flex;align-items:center;gap:.5rem;border-bottom:2px solid var(--miami)">
+      <span style="font-size:16px">🏖️</span>
+      <span style="font-size:13px;font-weight:700;color:var(--miami)">Miami</span>
+      <span id="miami-count" style="font-size:10px;background:var(--miami);color:#fff;border-radius:20px;padding:1px 7px;margin-left:auto"></span>
+    </div>
+    <div style="height:260px;position:relative">
+      <iframe id="map-miami"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=-80.31,25.73,-80.11,25.97&layer=mapnik"
+        width="100%" height="100%" style="border:0" loading="lazy"></iframe>
+    </div>
+    <div id="list-miami" style="max-height:220px;overflow-y:auto;padding:.5rem"></div>
+  </div>
+
+  <!-- Tampa -->
+  <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--r);overflow:hidden">
+    <div style="background:var(--tampa-bg);padding:.625rem 1rem;display:flex;align-items:center;gap:.5rem;border-bottom:2px solid var(--tampa)">
+      <span style="font-size:16px">🦒</span>
+      <span style="font-size:13px;font-weight:700;color:var(--tampa)">Tampa</span>
+      <span id="tampa-count" style="font-size:10px;background:var(--tampa);color:#fff;border-radius:20px;padding:1px 7px;margin-left:auto"></span>
+    </div>
+    <div style="height:260px;position:relative">
+      <iframe id="map-tampa"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=-82.55,27.90,-82.37,28.09&layer=mapnik"
+        width="100%" height="100%" style="border:0" loading="lazy"></iframe>
+    </div>
+    <div id="list-tampa" style="max-height:220px;overflow-y:auto;padding:.5rem"></div>
+  </div>
+
+  <!-- Orlando -->
+  <div style="background:var(--card);border:1px solid var(--border);border-radius:var(--r);overflow:hidden">
+    <div style="background:var(--orlando-bg);padding:.625rem 1rem;display:flex;align-items:center;gap:.5rem;border-bottom:2px solid var(--orlando)">
+      <span style="font-size:16px">🏰</span>
+      <span style="font-size:13px;font-weight:700;color:var(--orlando)">Orlando</span>
+      <span id="orlando-count" style="font-size:10px;background:var(--orlando);color:#fff;border-radius:20px;padding:1px 7px;margin-left:auto"></span>
+    </div>
+    <div style="height:260px;position:relative">
+      <iframe id="map-orlando"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=-81.65,28.32,-81.35,28.57&layer=mapnik"
+        width="100%" height="100%" style="border:0" loading="lazy"></iframe>
+    </div>
+    <div id="list-orlando" style="max-height:220px;overflow-y:auto;padding:.5rem"></div>
+  </div>
+
+</div>
+
+<!-- Legend -->
+<div style="display:flex;gap:.75rem;flex-wrap:wrap;font-size:11px;padding:.75rem;background:var(--card);border:1px solid var(--border);border-radius:var(--rs)">
+  <span style="font-weight:600;color:var(--muted)">Ícones:</span>
+  <span>🏨 Hotel</span><span>🎡 Parque</span><span>🛍️ Compras</span><span>📍 Turístico</span><span>✈️ Aeroporto</span>
+  <span style="margin-left:auto;color:var(--muted)">Clique em um item da lista para ver no Google Maps</span>
+</div>
+
 </div>
 
 <!-- === PAGAMENTOS === -->
 <div id="pagamentos" class="tab-content">
 <style>
-.pag-badge{font-size:10px;font-weight:600;padding:2px 8px;border-radius:20px}
-.pag-pix{background:#D1FAE5;color:#059669}
-.pag-charged{background:#FEF3C7;color:#92400E}
-.pag-future{background:#DBEAFE;color:#1D4ED8}
-.pag-est{background:#FFF7ED;color:#C2410C}
-.pag-row{display:flex;align-items:center;justify-content:space-between;padding:.5rem 0;border-bottom:1px solid #F3F4F6;gap:.5rem;flex-wrap:wrap}
+.pag-badge{font-size:10px;font-weight:600;padding:2px 9px;border-radius:20px;white-space:nowrap}
+.pag-pix{background:#D1FAE5;color:#065F46;border:1px solid #6EE7B7}
+.pag-charged{background:#FEF3C7;color:#78350F;border:1px solid #FCD34D}
+.pag-future{background:#DBEAFE;color:#1E40AF;border:1px solid #93C5FD}
+.pag-est{background:#FFF7ED;color:#9A3412;border:1px solid #FCA5A1}
+.pag-row{display:flex;align-items:center;justify-content:space-between;padding:.625rem 0;border-bottom:1px solid #F3F4F6;gap:.5rem;flex-wrap:wrap}
 .pag-row:last-child{border-bottom:none}
+.pag-month-block{transition:all .15s}
+.cpill{font-size:10px;font-weight:700;border-radius:10px;padding:1px 8px}
+.c9377{color:#1A6FC4;background:#deeefb}.c4660{color:#7C4DCC;background:#F3F0FF}
+.cpix{color:#059669;background:#D1FAE5}.c0504{color:#BE185D;background:#FCE7F3}
+.cgray{color:#6B7280;font-style:italic;font-weight:400}
+.pag-sum-card{transition:all .15s}
+.chart-wrap{display:flex;gap:6px;align-items:flex-end;height:160px;padding:8px .5rem 0;margin-bottom:.25rem}
+.chart-col{display:flex;flex-direction:column;align-items:center;flex:1;cursor:pointer;height:100%}
+.chart-val{font-size:9px;font-weight:700;color:#334155;text-align:center;line-height:1.2;margin-bottom:3px;flex-shrink:0}
+.chart-bar-wrap{flex:1;width:100%;display:flex;align-items:flex-end;min-height:20px}
+.chart-bar-stack{width:100%;display:flex;flex-direction:column;justify-content:flex-end;border-radius:4px;overflow:hidden;transition:opacity .2s}
+.chart-col.active-month .chart-bar-stack{outline:3px solid var(--accent);border-radius:6px}
+.chart-lbl{font-size:10px;font-weight:700;color:#64748B;margin-top:4px;flex-shrink:0}
+.chart-vence{font-size:9px;color:#94A3B8;margin-top:1px;flex-shrink:0}
+.pag-filter-btn{padding:.375rem .875rem;border-radius:20px;font-size:12px;cursor:pointer;font-weight:500;border:1px solid var(--border);background:var(--bg);color:var(--muted);transition:all .15s;white-space:nowrap}
+.pag-filter-btn.active{background:var(--accent);color:#fff;border-color:transparent;font-weight:700}
 </style>
-<h2 style="font-size:20px;font-weight:500;font-family:'DM Serif Display',serif;margin-bottom:.5rem">💳 Programacao de Pagamentos</h2>
-<p style="font-size:12px;color:#6B7280;margin-bottom:1.25rem">Cartao fecha dia <strong>01</strong> &middot; Vence dia <strong>08</strong> &middot; Clique nos quadros para filtrar</p>
-<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:.75rem;margin-bottom:1.25rem">
-  <div onclick="pagFilter('pix',this)" style="background:#D1FAE5;border:2px solid #059669;border-radius:12px;padding:.875rem;text-align:center;cursor:pointer"><div style="font-size:18px;font-weight:700;color:#059669">R$ 1.390,86</div><div style="font-size:10px;font-weight:700;color:#065F46;text-transform:uppercase;letter-spacing:.4px;margin-top:3px">⚡ Pago PIX</div></div>
-  <div onclick="pagFilter('charged',this)" style="background:#FEF3C7;border:2px solid #D97706;border-radius:12px;padding:.875rem;text-align:center;cursor:pointer"><div style="font-size:18px;font-weight:700;color:#92400E">R$ 13.687,98</div><div style="font-size:10px;font-weight:700;color:#78350F;text-transform:uppercase;letter-spacing:.4px;margin-top:3px">💳 No cartao</div><div style="font-size:9px;color:#92400E;margin-top:1px">Vence 08/jun</div></div>
-  <div onclick="pagFilter('future',this)" style="background:#DBEAFE;border:2px solid #3B82F6;border-radius:12px;padding:.875rem;text-align:center;cursor:pointer"><div style="font-size:18px;font-weight:700;color:#1D4ED8">R$ 21.226,02</div><div style="font-size:10px;font-weight:700;color:#1E40AF;text-transform:uppercase;letter-spacing:.4px;margin-top:3px">📅 A pagar</div></div>
-  <div onclick="pagFilter('all',this)" style="background:#F1F5F9;border:2px solid #94A3B8;border-radius:12px;padding:.875rem;text-align:center;cursor:pointer"><div style="font-size:18px;font-weight:700;color:#334155">R$ 36.304,86</div><div style="font-size:10px;font-weight:700;color:#475569;text-transform:uppercase;letter-spacing:.4px;margin-top:3px">📊 Total geral</div></div>
+
+<h2 style="font-size:20px;font-weight:500;font-family:'DM Serif Display',serif;margin-bottom:.375rem">💳 Programação de Pagamentos</h2>
+<p style="font-size:12px;color:#6B7280;margin-bottom:1.25rem">Cartão fecha dia <strong>01</strong> de cada mês · Vence dia <strong>08</strong> · Clique nos quadros ou gráfico para filtrar</p>
+
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:.75rem;margin-bottom:1.5rem">
+  <div onclick="pagFilter('paid',this)" class="pag-sum-card" style="background:#ECFDF5;border:2px solid #10B981;border-radius:12px;padding:1rem;text-align:center;cursor:pointer">
+    <div style="font-size:11px;font-weight:700;color:#059669;margin-bottom:4px">✅ PAGO</div>
+    <div style="font-size:18px;font-weight:800;color:#065F46">R$ 9.869,56</div>
+    <div style="font-size:10px;color:#059669;margin-top:2px">PIX + cartão vencido</div>
+  </div>
+  <div onclick="pagFilter('topay',this)" class="pag-sum-card" style="background:#EFF6FF;border:2px solid #3B82F6;border-radius:12px;padding:1rem;text-align:center;cursor:pointer">
+    <div style="font-size:11px;font-weight:700;color:#3B82F6;margin-bottom:4px">📅 A PAGAR</div>
+    <div style="font-size:18px;font-weight:800;color:#1E40AF">R$ 24.684,04</div>
+    <div style="font-size:10px;color:#1D4ED8;margin-top:2px">Jun/26 a Out/26</div>
+  </div>
+  <div onclick="pagFilter('est',this)" class="pag-sum-card" style="background:#FFF7ED;border:2px solid #F97316;border-radius:12px;padding:1rem;text-align:center;cursor:pointer">
+    <div style="font-size:11px;font-weight:700;color:#EA580C;margin-bottom:4px">🔵 ESTIMATIVAS</div>
+    <div style="font-size:18px;font-weight:800;color:#9A3412">R$ 1.500,00</div>
+    <div style="font-size:10px;color:#EA580C;margin-top:2px">Seguro · Chip</div>
+  </div>
+  <div onclick="pagFilter('all',this)" class="pag-sum-card" style="background:#F8FAFC;border:2px solid #94A3B8;border-radius:12px;padding:1rem;text-align:center;cursor:pointer">
+    <div style="font-size:11px;font-weight:700;color:#64748B;margin-bottom:4px">📊 TOTAL GERAL</div>
+    <div style="font-size:18px;font-weight:800;color:#1E293B">R$ 36.053,60</div>
+    <div style="font-size:10px;color:#64748B;margin-top:2px">Todas as despesas</div>
+  </div>
 </div>
-<div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.5rem;font-size:11px;align-items:center">
-  <span class="pag-badge pag-pix">PIX quitado</span>
-  <span class="pag-badge pag-charged">No cartao (vence 08/jun)</span>
-  <span class="pag-badge pag-future">A pagar</span>
-  <span class="pag-badge pag-est">Estimativa</span>
+
+<div style="background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:1.25rem;margin-bottom:1.5rem">
+  <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem;flex-wrap:wrap;gap:.5rem">
+    <div style="font-size:13px;font-weight:600">📊 Vencimentos por mês</div>
+    <div style="display:flex;gap:.375rem;align-items:center;font-size:10px">
+      <span style="width:10px;height:10px;border-radius:2px;background:#059669;display:inline-block"></span>PIX
+      <span style="width:10px;height:10px;border-radius:2px;background:#D97706;display:inline-block;margin-left:6px"></span>Cartão
+      <span style="width:10px;height:10px;border-radius:2px;background:#3B82F6;display:inline-block;margin-left:6px"></span>A pagar
+      <button onclick="pagFilter('all',null);pagFilterMonth('all',null)" style="margin-left:8px;font-size:10px;padding:2px 8px;border:1px solid var(--border);border-radius:10px;background:var(--bg);cursor:pointer;color:var(--muted)">Limpar filtro</button>
+    </div>
+  </div>
+  <div class="chart-wrap" id="pagChart"><div class="chart-col" id="chart-2026-05" onclick="pagFilterMonth('2026-05',this)" title="Vence 08/jun/2026">
+      <div class="chart-val">R$ 9.869,56</div>
+      <div class="chart-bar-wrap">
+        <div class="chart-bar-stack" style="height:109px">
+          
+          <div style="height:73px;background:#D97706"></div>
+          <div style="height:36px;background:#059669;border-radius:4px 4px 0 0"></div>
+        </div>
+      </div>
+      <div class="chart-lbl">Mai/26</div>
+      <div class="chart-vence">vence jun/26</div>
+    </div><div class="chart-col" id="chart-2026-06" onclick="pagFilterMonth('2026-06',this)" title="Vence 08/jul/2026">
+      <div class="chart-val">R$ 5.261,70</div>
+      <div class="chart-bar-wrap">
+        <div class="chart-bar-stack" style="height:58px">
+          <div style="height:58px;background:#3B82F6"></div>
+          
+          
+        </div>
+      </div>
+      <div class="chart-lbl">Jun/26</div>
+      <div class="chart-vence">vence jul/26</div>
+    </div><div class="chart-col" id="chart-2026-07" onclick="pagFilterMonth('2026-07',this)" title="Vence 08/ago/2026">
+      <div class="chart-val">R$ 5.261,70</div>
+      <div class="chart-bar-wrap">
+        <div class="chart-bar-stack" style="height:58px">
+          <div style="height:58px;background:#3B82F6"></div>
+          
+          
+        </div>
+      </div>
+      <div class="chart-lbl">Jul/26</div>
+      <div class="chart-vence">vence ago/26</div>
+    </div><div class="chart-col" id="chart-2026-08" onclick="pagFilterMonth('2026-08',this)" title="Vence 08/set/2026">
+      <div class="chart-val">R$ 8.355,70</div>
+      <div class="chart-bar-wrap">
+        <div class="chart-bar-stack" style="height:93px">
+          <div style="height:93px;background:#3B82F6"></div>
+          
+          
+        </div>
+      </div>
+      <div class="chart-lbl">Ago/26</div>
+      <div class="chart-vence">vence set/26</div>
+    </div><div class="chart-col" id="chart-2026-09" onclick="pagFilterMonth('2026-09',this)" title="Vence 08/out/2026">
+      <div class="chart-val">R$ 4.315,03</div>
+      <div class="chart-bar-wrap">
+        <div class="chart-bar-stack" style="height:48px">
+          <div style="height:48px;background:#3B82F6"></div>
+          
+          
+        </div>
+      </div>
+      <div class="chart-lbl">Set/26</div>
+      <div class="chart-vence">vence out/26</div>
+    </div><div class="chart-col" id="chart-2026-10" onclick="pagFilterMonth('2026-10',this)" title="Vence 08/nov/2026">
+      <div class="chart-val">R$ 2.989,91</div>
+      <div class="chart-bar-wrap">
+        <div class="chart-bar-stack" style="height:33px">
+          <div style="height:33px;background:#3B82F6"></div>
+          
+          
+        </div>
+      </div>
+      <div class="chart-lbl">Out/26</div>
+      <div class="chart-vence">vence nov/26</div>
+    </div></div>
 </div>
-<div style="background:#fff;border:1px solid #e5e7eb;border-left:4px solid #16A34A;border-radius:12px;padding:1.25rem;margin-bottom:1rem"><div style="display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:.5rem;margin-bottom:.875rem"><div><div style="font-size:15px;font-weight:600">Dezembro 2025</div><div style="font-size:11px;color:#6B7280;margin-top:2px">Fatura fecha 01/jan/26 &rarr; <strong>Vence 08/jan/26</strong></div></div><div style="text-align:right"><div style="font-size:17px;font-weight:700;color:#0F6E56">R$ 1.544,31</div><div style="margin-top:2px"><span style="color:#92400E;font-size:11px;font-weight:600">R$ 1.544,31 no cartao</span></div></div></div><div class="pag-row" data-status="charged"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500">Passagem LATAM (1/6)</div><div style="margin-top:2px"><span style="font-size:10px;font-weight:700;color:#1A6FC4;background:#deeefb;border-radius:10px;padding:1px 7px">●&nbsp;9377</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#92400E">R$ 1.544,31</span><span class="pag-badge pag-charged">No cartao</span></div></div></div><div style="background:#fff;border:1px solid #e5e7eb;border-left:4px solid #16A34A;border-radius:12px;padding:1.25rem;margin-bottom:1rem"><div style="display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:.5rem;margin-bottom:.875rem"><div><div style="font-size:15px;font-weight:600">Janeiro 2026</div><div style="font-size:11px;color:#6B7280;margin-top:2px">Fatura fecha 01/fev/26 &rarr; <strong>Vence 08/fev/26</strong></div></div><div style="text-align:right"><div style="font-size:17px;font-weight:700;color:#0F6E56">R$ 1.544,31</div><div style="margin-top:2px"><span style="color:#92400E;font-size:11px;font-weight:600">R$ 1.544,31 no cartao</span></div></div></div><div class="pag-row" data-status="charged"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500">Passagem LATAM (2/6)</div><div style="margin-top:2px"><span style="font-size:10px;font-weight:700;color:#1A6FC4;background:#deeefb;border-radius:10px;padding:1px 7px">●&nbsp;9377</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#92400E">R$ 1.544,31</span><span class="pag-badge pag-charged">No cartao</span></div></div></div><div style="background:#fff;border:1px solid #e5e7eb;border-left:4px solid #16A34A;border-radius:12px;padding:1.25rem;margin-bottom:1rem"><div style="display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:.5rem;margin-bottom:.875rem"><div><div style="font-size:15px;font-weight:600">Fevereiro 2026</div><div style="font-size:11px;color:#6B7280;margin-top:2px">Fatura fecha 01/mar/26 &rarr; <strong>Vence 08/mar/26</strong></div></div><div style="text-align:right"><div style="font-size:17px;font-weight:700;color:#0F6E56">R$ 1.544,31</div><div style="margin-top:2px"><span style="color:#92400E;font-size:11px;font-weight:600">R$ 1.544,31 no cartao</span></div></div></div><div class="pag-row" data-status="charged"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500">Passagem LATAM (3/6)</div><div style="margin-top:2px"><span style="font-size:10px;font-weight:700;color:#1A6FC4;background:#deeefb;border-radius:10px;padding:1px 7px">●&nbsp;9377</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#92400E">R$ 1.544,31</span><span class="pag-badge pag-charged">No cartao</span></div></div></div><div style="background:#fff;border:1px solid #e5e7eb;border-left:4px solid #16A34A;border-radius:12px;padding:1.25rem;margin-bottom:1rem"><div style="display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:.5rem;margin-bottom:.875rem"><div><div style="font-size:15px;font-weight:600">Marco 2026</div><div style="font-size:11px;color:#6B7280;margin-top:2px">Fatura fecha 01/abr/26 &rarr; <strong>Vence 08/abr/26</strong></div></div><div style="text-align:right"><div style="font-size:17px;font-weight:700;color:#0F6E56">R$ 1.544,31</div><div style="margin-top:2px"><span style="color:#92400E;font-size:11px;font-weight:600">R$ 1.544,31 no cartao</span></div></div></div><div class="pag-row" data-status="charged"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500">Passagem LATAM (4/6)</div><div style="margin-top:2px"><span style="font-size:10px;font-weight:700;color:#1A6FC4;background:#deeefb;border-radius:10px;padding:1px 7px">●&nbsp;9377</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#92400E">R$ 1.544,31</span><span class="pag-badge pag-charged">No cartao</span></div></div></div><div style="background:#fff;border:1px solid #e5e7eb;border-left:4px solid #16A34A;border-radius:12px;padding:1.25rem;margin-bottom:1rem"><div style="display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:.5rem;margin-bottom:.875rem"><div><div style="font-size:15px;font-weight:600">Abril 2026</div><div style="font-size:11px;color:#6B7280;margin-top:2px">Fatura fecha 01/mai/26 &rarr; <strong>Vence 08/mai/26</strong></div></div><div style="text-align:right"><div style="font-size:17px;font-weight:700;color:#0F6E56">R$ 1.544,31</div><div style="margin-top:2px"><span style="color:#92400E;font-size:11px;font-weight:600">R$ 1.544,31 no cartao</span></div></div></div><div class="pag-row" data-status="charged"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500">Passagem LATAM (5/6)</div><div style="margin-top:2px"><span style="font-size:10px;font-weight:700;color:#1A6FC4;background:#deeefb;border-radius:10px;padding:1px 7px">●&nbsp;9377</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#92400E">R$ 1.544,31</span><span class="pag-badge pag-charged">No cartao</span></div></div></div><div style="background:#fff;border:1px solid #e5e7eb;border-left:4px solid #16A34A;border-radius:12px;padding:1.25rem;margin-bottom:1rem"><div style="display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:.5rem;margin-bottom:.875rem"><div><div style="font-size:15px;font-weight:600">Maio 2026</div><div style="font-size:11px;color:#6B7280;margin-top:2px">Fatura fecha 01/jun/26 &rarr; <strong>Vence 08/jun/26</strong></div></div><div style="text-align:right"><div style="font-size:17px;font-weight:700;color:#0F6E56">R$ 7.357,29</div><div style="margin-top:2px"><span style="color:#059669;font-size:11px;font-weight:600">R$ 1.390,86 PIX</span> &nbsp;·&nbsp; <span style="color:#92400E;font-size:11px;font-weight:600">R$ 5.966,43 no cartao</span></div></div></div><div class="pag-row" data-status="charged"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500">Passagem LATAM (6/6)<span style="font-size:10px;color:#EA580C;margin-left:4px">⚠ Ultima parcela</span></div><div style="margin-top:2px"><span style="font-size:10px;font-weight:700;color:#1A6FC4;background:#deeefb;border-radius:10px;padding:1px 7px">●&nbsp;9377</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#92400E">R$ 1.544,31</span><span class="pag-badge pag-charged">No cartao</span></div></div><div class="pag-row" data-status="charged"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500">Hotel Tampa — Hampton Inn<span style="font-size:10px;color:#EA580C;margin-left:4px">⚠ Ja debitado</span></div><div style="margin-top:2px"><span style="font-size:10px;font-weight:700;color:#1A6FC4;background:#deeefb;border-radius:10px;padding:1px 7px">●&nbsp;9377</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#92400E">R$ 1.317,00</span><span class="pag-badge pag-charged">No cartao</span></div></div><div class="pag-row" data-status="charged"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500">Carro Florida Rental (1/6)</div><div style="margin-top:2px"><span style="font-size:10px;color:#9CA3AF;font-style:italic">cartao a confirmar</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#92400E">R$ 833,33</span><span class="pag-badge pag-charged">No cartao</span></div></div><div class="pag-row" data-status="charged"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500">Universal Orlando (1/4)</div><div style="margin-top:2px"><span style="font-size:10px;font-weight:700;color:#1A6FC4;background:#deeefb;border-radius:10px;padding:1px 7px">●&nbsp;9377</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#92400E">R$ 1.155,99</span><span class="pag-badge pag-charged">No cartao</span></div></div><div class="pag-row" data-status="charged"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500">Disney 4-Park (1/4)</div><div style="margin-top:2px"><span style="font-size:10px;font-weight:700;color:#7C4DCC;background:#F3F0FF;border-radius:10px;padding:1px 7px">●&nbsp;4660</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#92400E">R$ 1.115,80</span><span class="pag-badge pag-charged">No cartao</span></div></div><div class="pag-row" data-status="pix"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500">Busch Gardens + SeaWorld<span style="font-size:10px;color:#EA580C;margin-left:4px">⚠ Pago no PIX — ja quitado</span></div><div style="margin-top:2px"><span style="font-size:10px;font-weight:700;color:#059669;background:#D1FAE5;border-radius:10px;padding:1px 7px">⚡ PIX</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#059669">R$ 1.390,86</span><span class="pag-badge pag-pix">PIX quitado</span></div></div></div><div style="background:#fff;border:1px solid #e5e7eb;border-left:4px solid #2563EB;border-radius:12px;padding:1.25rem;margin-bottom:1rem"><div style="display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:.5rem;margin-bottom:.875rem"><div><div style="font-size:15px;font-weight:600">Junho 2026</div><div style="font-size:11px;color:#6B7280;margin-top:2px">Fatura fecha 01/jul/26 &rarr; <strong>Vence 08/jul/26</strong></div></div><div style="text-align:right"><div style="font-size:17px;font-weight:700;color:#0F6E56">R$ 3.105,12</div><div style="margin-top:2px"><span style="color:#1D4ED8;font-size:11px;font-weight:600">R$ 3.105,12 a pagar</span></div></div></div><div class="pag-row" data-status="future"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500">Carro Florida Rental (2/6)</div><div style="margin-top:2px"><span style="font-size:10px;color:#9CA3AF;font-style:italic">cartao a confirmar</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#1D4ED8">R$ 833,33</span><span class="pag-badge pag-future">A pagar</span></div></div><div class="pag-row" data-status="future"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500">Universal Orlando (2/4)</div><div style="margin-top:2px"><span style="font-size:10px;font-weight:700;color:#1A6FC4;background:#deeefb;border-radius:10px;padding:1px 7px">●&nbsp;9377</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#1D4ED8">R$ 1.155,99</span><span class="pag-badge pag-future">A pagar</span></div></div><div class="pag-row" data-status="future"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500">Disney 4-Park (2/4)</div><div style="margin-top:2px"><span style="font-size:10px;font-weight:700;color:#7C4DCC;background:#F3F0FF;border-radius:10px;padding:1px 7px">●&nbsp;4660</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#1D4ED8">R$ 1.115,80</span><span class="pag-badge pag-future">A pagar</span></div></div></div><div style="background:#fff;border:1px solid #e5e7eb;border-left:4px solid #2563EB;border-radius:12px;padding:1.25rem;margin-bottom:1rem"><div style="display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:.5rem;margin-bottom:.875rem"><div><div style="font-size:15px;font-weight:600">Julho 2026</div><div style="font-size:11px;color:#6B7280;margin-top:2px">Fatura fecha 01/ago/26 &rarr; <strong>Vence 08/ago/26</strong></div></div><div style="text-align:right"><div style="font-size:17px;font-weight:700;color:#0F6E56">R$ 3.105,12</div><div style="margin-top:2px"><span style="color:#1D4ED8;font-size:11px;font-weight:600">R$ 3.105,12 a pagar</span></div></div></div><div class="pag-row" data-status="future"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500">Carro Florida Rental (3/6)</div><div style="margin-top:2px"><span style="font-size:10px;color:#9CA3AF;font-style:italic">cartao a confirmar</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#1D4ED8">R$ 833,33</span><span class="pag-badge pag-future">A pagar</span></div></div><div class="pag-row" data-status="future"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500">Universal Orlando (3/4)</div><div style="margin-top:2px"><span style="font-size:10px;font-weight:700;color:#1A6FC4;background:#deeefb;border-radius:10px;padding:1px 7px">●&nbsp;9377</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#1D4ED8">R$ 1.155,99</span><span class="pag-badge pag-future">A pagar</span></div></div><div class="pag-row" data-status="future"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500">Disney 4-Park (3/4)</div><div style="margin-top:2px"><span style="font-size:10px;font-weight:700;color:#7C4DCC;background:#F3F0FF;border-radius:10px;padding:1px 7px">●&nbsp;4660</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#1D4ED8">R$ 1.115,80</span><span class="pag-badge pag-future">A pagar</span></div></div></div><div style="background:#fff;border:1px solid #e5e7eb;border-left:4px solid #2563EB;border-radius:12px;padding:1.25rem;margin-bottom:1rem"><div style="display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:.5rem;margin-bottom:.875rem"><div><div style="font-size:15px;font-weight:600">Agosto 2026</div><div style="font-size:11px;color:#6B7280;margin-top:2px">Fatura fecha 01/set/26 &rarr; <strong>Vence 08/set/26</strong></div></div><div style="text-align:right"><div style="font-size:17px;font-weight:700;color:#0F6E56">R$ 7.999,12</div><div style="margin-top:2px"><span style="color:#1D4ED8;font-size:11px;font-weight:600">R$ 7.999,12 a pagar</span></div></div></div><div class="pag-row" data-status="future"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500">Carro Florida Rental (4/6)</div><div style="margin-top:2px"><span style="font-size:10px;color:#9CA3AF;font-style:italic">cartao a confirmar</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#1D4ED8">R$ 833,33</span><span class="pag-badge pag-future">A pagar</span></div></div><div class="pag-row" data-status="future"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500">Universal Orlando (4/4)<span style="font-size:10px;color:#EA580C;margin-left:4px">⚠ Ultima parcela</span></div><div style="margin-top:2px"><span style="font-size:10px;font-weight:700;color:#1A6FC4;background:#deeefb;border-radius:10px;padding:1px 7px">●&nbsp;9377</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#1D4ED8">R$ 1.155,99</span><span class="pag-badge pag-future">A pagar</span></div></div><div class="pag-row" data-status="future"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500">Disney 4-Park (4/4)<span style="font-size:10px;color:#EA580C;margin-left:4px">⚠ Ultima parcela</span></div><div style="margin-top:2px"><span style="font-size:10px;font-weight:700;color:#7C4DCC;background:#F3F0FF;border-radius:10px;padding:1px 7px">●&nbsp;4660</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#1D4ED8">R$ 1.115,80</span><span class="pag-badge pag-future">A pagar</span></div></div><div class="pag-row" data-status="future"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500">Hotel Miami — Shine Suites<span style="font-size:10px;color:#EA580C;margin-left:4px">⚠ Pagar ate 01/ago/2026</span></div><div style="margin-top:2px"><span style="font-size:10px;font-weight:700;color:#1A6FC4;background:#deeefb;border-radius:10px;padding:1px 7px">●&nbsp;9377</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#1D4ED8">R$ 1.594,00</span><span class="pag-badge pag-future">A pagar</span></div></div><div class="pag-row" data-status="est"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500">MK Halloween Party<span style="font-size:10px;color:#EA580C;margin-left:4px">⚠ Estimativa</span></div><div style="margin-top:2px"><span style="font-size:10px;color:#9CA3AF;font-style:italic">cartao a confirmar</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#C2410C">R$ 1.800,00</span><span class="pag-badge pag-est">Estimativa</span></div></div><div class="pag-row" data-status="est"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500">Seguro Viagem<span style="font-size:10px;color:#EA580C;margin-left:4px">⚠ Estimativa</span></div><div style="margin-top:2px"><span style="font-size:10px;color:#9CA3AF;font-style:italic">cartao a confirmar</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#C2410C">R$ 900,00</span><span class="pag-badge pag-est">Estimativa</span></div></div><div class="pag-row" data-status="est"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500">Chip Internacional<span style="font-size:10px;color:#EA580C;margin-left:4px">⚠ Estimativa</span></div><div style="margin-top:2px"><span style="font-size:10px;color:#9CA3AF;font-style:italic">cartao a confirmar</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#C2410C">R$ 600,00</span><span class="pag-badge pag-est">Estimativa</span></div></div></div><div style="background:#fff;border:1px solid #e5e7eb;border-left:4px solid #2563EB;border-radius:12px;padding:1.25rem;margin-bottom:1rem"><div style="display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:.5rem;margin-bottom:.875rem"><div><div style="font-size:15px;font-weight:600">Setembro 2026</div><div style="font-size:11px;color:#6B7280;margin-top:2px">Fatura fecha 01/out/26 &rarr; <strong>Vence 08/out/26</strong></div></div><div style="text-align:right"><div style="font-size:17px;font-weight:700;color:#0F6E56">R$ 6.183,33</div><div style="margin-top:2px"><span style="color:#1D4ED8;font-size:11px;font-weight:600">R$ 6.183,33 a pagar</span></div></div></div><div class="pag-row" data-status="future"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500">Carro Florida Rental (5/6)</div><div style="margin-top:2px"><span style="font-size:10px;color:#9CA3AF;font-style:italic">cartao a confirmar</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#1D4ED8">R$ 833,33</span><span class="pag-badge pag-future">A pagar</span></div></div><div class="pag-row" data-status="future"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500">Hotel Orlando — Monreale<span style="font-size:10px;color:#EA580C;margin-left:4px">⚠ Cobrado em 02/set/2026</span></div><div style="margin-top:2px"><span style="font-size:10px;color:#9CA3AF;font-style:italic">cartao a confirmar</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#1D4ED8">R$ 5.350,00</span><span class="pag-badge pag-future">A pagar</span></div></div></div><div style="background:#fff;border:1px solid #e5e7eb;border-left:4px solid #2563EB;border-radius:12px;padding:1.25rem;margin-bottom:1rem"><div style="display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:.5rem;margin-bottom:.875rem"><div><div style="font-size:15px;font-weight:600">Outubro 2026</div><div style="font-size:11px;color:#6B7280;margin-top:2px">Fatura fecha 01/nov/26 &rarr; <strong>Vence 08/nov/26</strong></div></div><div style="text-align:right"><div style="font-size:17px;font-weight:700;color:#0F6E56">R$ 833,33</div><div style="margin-top:2px"><span style="color:#1D4ED8;font-size:11px;font-weight:600">R$ 833,33 a pagar</span></div></div></div><div class="pag-row" data-status="future"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500">Carro Florida Rental (6/6)<span style="font-size:10px;color:#EA580C;margin-left:4px">⚠ Ultima parcela</span></div><div style="margin-top:2px"><span style="font-size:10px;color:#9CA3AF;font-style:italic">cartao a confirmar</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#1D4ED8">R$ 833,33</span><span class="pag-badge pag-future">A pagar</span></div></div></div>
-<div style="background:#FEF3C7;border:1px solid #D97706;border-radius:8px;padding:.75rem 1rem;font-size:12px;color:#92400E;margin-top:.75rem">⚠️ <strong>Cartao do carro nao identificado</strong> — verifique e atualize. Parcelas set/out 2026 serao cobradas apos a viagem.</div>
+
+<div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1rem;align-items:center">
+  <span style="font-size:11px;color:var(--muted);font-weight:600">Mês:</span>
+  <button class="pag-filter-btn active" onclick="pagFilterMonth('all',this)">Todos</button>
+  <button class="pag-filter-btn" onclick="pagFilterMonth('2026-05',this)">Mai/26</button><button class="pag-filter-btn" onclick="pagFilterMonth('2026-06',this)">Jun/26</button><button class="pag-filter-btn" onclick="pagFilterMonth('2026-07',this)">Jul/26</button><button class="pag-filter-btn" onclick="pagFilterMonth('2026-08',this)">Ago/26</button><button class="pag-filter-btn" onclick="pagFilterMonth('2026-09',this)">Set/26</button><button class="pag-filter-btn" onclick="pagFilterMonth('2026-10',this)">Out/26</button>
+</div>
+
+<div id="pagMonths"><div class="pag-month-block" id="pmo-2026-05" style="background:#fff;border:1px solid #e5e7eb;border-left:5px solid #16A34A;border-radius:12px;overflow:hidden;margin-bottom:.875rem"><div style="background:#F0FDF4;padding:.875rem 1.25rem;display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:.5rem"><div><div style="font-size:14px;font-weight:700">Maio 2026</div><div style="font-size:11px;color:#6B7280;margin-top:2px">Fatura fecha 01 &rarr; <strong style="color:#16A34A">Vence 08/jun/2026</strong></div></div><div style="text-align:right"><div style="font-size:17px;font-weight:800;color:#0F6E56">R$ 9.869,56</div><div style="margin-top:3px"><span style="color:#059669;font-weight:600;font-size:11px">R$ 3.290,86 PIX</span> &nbsp;·&nbsp; <span style="color:#92400E;font-weight:600;font-size:11px">R$ 6.578,70 cartão</span></div></div></div><div style="padding:.25rem 1.25rem .75rem"><div class="pag-row" data-status="charged" data-month="2026-05"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500;line-height:1.4">Passagem LATAM — parc. 1/6</div><div style="margin-top:3px"><span class="cpill c9377">●&nbsp;9377 LATAM</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#92400E">R$ 1.544,31</span><span class="pag-badge pag-charged">💳 Vence 08/jun</span></div></div><div class="pag-row" data-status="charged" data-month="2026-05"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500;line-height:1.4">Hotel Tampa — Hampton Inn (1x)</div><div style="margin-top:3px"><span class="cpill c9377">●&nbsp;9377</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#92400E">R$ 1.317,00</span><span class="pag-badge pag-charged">💳 Vence 08/jun</span></div></div><div class="pag-row" data-status="charged" data-month="2026-05"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500;line-height:1.4">Carro Florida Rental — parc. 1/6</div><div style="margin-top:3px"><span class="cpill cgray">cartão a confirmar</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#92400E">R$ 833,33</span><span class="pag-badge pag-charged">💳 Vence 08/jun</span></div></div><div class="pag-row" data-status="charged" data-month="2026-05"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500;line-height:1.4">Universal Orlando — parc. 1/4</div><div style="margin-top:3px"><span class="cpill c9377">●&nbsp;9377</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#92400E">R$ 1.155,99</span><span class="pag-badge pag-charged">💳 Vence 08/jun</span></div></div><div class="pag-row" data-status="charged" data-month="2026-05"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500;line-height:1.4">Disney 4-Park — parc. 1/4</div><div style="margin-top:3px"><span class="cpill c4660">●&nbsp;4660</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#92400E">R$ 1.115,80</span><span class="pag-badge pag-charged">💳 Vence 08/jun</span></div></div><div class="pag-row" data-status="charged" data-month="2026-05"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500;line-height:1.4">Wyndham Orlando — parc. 1/6</div><div style="margin-top:3px"><span class="cpill c9377">●&nbsp;9377</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#92400E">R$ 612,27</span><span class="pag-badge pag-charged">💳 Vence 08/jun</span></div></div><div class="pag-row" data-status="pix" data-month="2026-05"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500;line-height:1.4">Busch Gardens + SeaWorld (PIX)</div><div style="margin-top:3px"><span class="cpill cpix">⚡&nbsp;PIX</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#065F46">R$ 1.390,86</span><span class="pag-badge pag-pix">⚡ PIX</span></div></div><div class="pag-row" data-status="pix" data-month="2026-05"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500;line-height:1.4">MK Halloween Party (PIX)</div><div style="margin-top:3px"><span class="cpill c0504">●&nbsp;Visa 0504</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#065F46">R$ 1.900,00</span><span class="pag-badge pag-pix">⚡ PIX</span></div></div></div></div><div class="pag-month-block" id="pmo-2026-06" style="background:#fff;border:1px solid #e5e7eb;border-left:5px solid #3B82F6;border-radius:12px;overflow:hidden;margin-bottom:.875rem"><div style="background:#EFF6FF;padding:.875rem 1.25rem;display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:.5rem"><div><div style="font-size:14px;font-weight:700">Junho 2026</div><div style="font-size:11px;color:#6B7280;margin-top:2px">Fatura fecha 01 &rarr; <strong style="color:#3B82F6">Vence 08/jul/2026</strong></div></div><div style="text-align:right"><div style="font-size:17px;font-weight:800;color:#0F6E56">R$ 5.261,70</div><div style="margin-top:3px"><span style="color:#1E40AF;font-weight:600;font-size:11px">R$ 5.261,70 a pagar</span></div></div></div><div style="padding:.25rem 1.25rem .75rem"><div class="pag-row" data-status="future" data-month="2026-06"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500;line-height:1.4">Passagem LATAM — parc. 2/6</div><div style="margin-top:3px"><span class="cpill c9377">●&nbsp;9377 LATAM</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#1E40AF">R$ 1.544,31</span><span class="pag-badge pag-future">📅 A pagar</span></div></div><div class="pag-row" data-status="future" data-month="2026-06"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500;line-height:1.4">Carro Florida Rental — parc. 2/6</div><div style="margin-top:3px"><span class="cpill cgray">cartão a confirmar</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#1E40AF">R$ 833,33</span><span class="pag-badge pag-future">📅 A pagar</span></div></div><div class="pag-row" data-status="future" data-month="2026-06"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500;line-height:1.4">Universal Orlando — parc. 2/4</div><div style="margin-top:3px"><span class="cpill c9377">●&nbsp;9377</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#1E40AF">R$ 1.155,99</span><span class="pag-badge pag-future">📅 A pagar</span></div></div><div class="pag-row" data-status="future" data-month="2026-06"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500;line-height:1.4">Disney 4-Park — parc. 2/4</div><div style="margin-top:3px"><span class="cpill c4660">●&nbsp;4660</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#1E40AF">R$ 1.115,80</span><span class="pag-badge pag-future">📅 A pagar</span></div></div><div class="pag-row" data-status="future" data-month="2026-06"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500;line-height:1.4">Wyndham Orlando — parc. 2/6</div><div style="margin-top:3px"><span class="cpill c9377">●&nbsp;9377</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#1E40AF">R$ 612,27</span><span class="pag-badge pag-future">📅 A pagar</span></div></div></div></div><div class="pag-month-block" id="pmo-2026-07" style="background:#fff;border:1px solid #e5e7eb;border-left:5px solid #3B82F6;border-radius:12px;overflow:hidden;margin-bottom:.875rem"><div style="background:#EFF6FF;padding:.875rem 1.25rem;display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:.5rem"><div><div style="font-size:14px;font-weight:700">Julho 2026</div><div style="font-size:11px;color:#6B7280;margin-top:2px">Fatura fecha 01 &rarr; <strong style="color:#3B82F6">Vence 08/ago/2026</strong></div></div><div style="text-align:right"><div style="font-size:17px;font-weight:800;color:#0F6E56">R$ 5.261,70</div><div style="margin-top:3px"><span style="color:#1E40AF;font-weight:600;font-size:11px">R$ 5.261,70 a pagar</span></div></div></div><div style="padding:.25rem 1.25rem .75rem"><div class="pag-row" data-status="future" data-month="2026-07"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500;line-height:1.4">Passagem LATAM — parc. 3/6</div><div style="margin-top:3px"><span class="cpill c9377">●&nbsp;9377 LATAM</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#1E40AF">R$ 1.544,31</span><span class="pag-badge pag-future">📅 A pagar</span></div></div><div class="pag-row" data-status="future" data-month="2026-07"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500;line-height:1.4">Carro Florida Rental — parc. 3/6</div><div style="margin-top:3px"><span class="cpill cgray">cartão a confirmar</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#1E40AF">R$ 833,33</span><span class="pag-badge pag-future">📅 A pagar</span></div></div><div class="pag-row" data-status="future" data-month="2026-07"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500;line-height:1.4">Universal Orlando — parc. 3/4</div><div style="margin-top:3px"><span class="cpill c9377">●&nbsp;9377</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#1E40AF">R$ 1.155,99</span><span class="pag-badge pag-future">📅 A pagar</span></div></div><div class="pag-row" data-status="future" data-month="2026-07"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500;line-height:1.4">Disney 4-Park — parc. 3/4</div><div style="margin-top:3px"><span class="cpill c4660">●&nbsp;4660</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#1E40AF">R$ 1.115,80</span><span class="pag-badge pag-future">📅 A pagar</span></div></div><div class="pag-row" data-status="future" data-month="2026-07"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500;line-height:1.4">Wyndham Orlando — parc. 3/6</div><div style="margin-top:3px"><span class="cpill c9377">●&nbsp;9377</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#1E40AF">R$ 612,27</span><span class="pag-badge pag-future">📅 A pagar</span></div></div></div></div><div class="pag-month-block" id="pmo-2026-08" style="background:#fff;border:1px solid #e5e7eb;border-left:5px solid #3B82F6;border-radius:12px;overflow:hidden;margin-bottom:.875rem"><div style="background:#EFF6FF;padding:.875rem 1.25rem;display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:.5rem"><div><div style="font-size:14px;font-weight:700">Agosto 2026</div><div style="font-size:11px;color:#6B7280;margin-top:2px">Fatura fecha 01 &rarr; <strong style="color:#3B82F6">Vence 08/set/2026</strong></div></div><div style="text-align:right"><div style="font-size:17px;font-weight:800;color:#0F6E56">R$ 8.355,70</div><div style="margin-top:3px"><span style="color:#1E40AF;font-weight:600;font-size:11px">R$ 8.355,70 a pagar</span></div></div></div><div style="padding:.25rem 1.25rem .75rem"><div class="pag-row" data-status="future" data-month="2026-08"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500;line-height:1.4">Passagem LATAM — parc. 4/6</div><div style="margin-top:3px"><span class="cpill c9377">●&nbsp;9377 LATAM</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#1E40AF">R$ 1.544,31</span><span class="pag-badge pag-future">📅 A pagar</span></div></div><div class="pag-row" data-status="future" data-month="2026-08"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500;line-height:1.4">Carro Florida Rental — parc. 4/6</div><div style="margin-top:3px"><span class="cpill cgray">cartão a confirmar</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#1E40AF">R$ 833,33</span><span class="pag-badge pag-future">📅 A pagar</span></div></div><div class="pag-row" data-status="future" data-month="2026-08"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500;line-height:1.4">Universal Orlando — parc. 4/4</div><div style="margin-top:3px"><span class="cpill c9377">●&nbsp;9377</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#1E40AF">R$ 1.155,99</span><span class="pag-badge pag-future">📅 A pagar</span></div></div><div class="pag-row" data-status="future" data-month="2026-08"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500;line-height:1.4">Disney 4-Park — parc. 4/4</div><div style="margin-top:3px"><span class="cpill c4660">●&nbsp;4660</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#1E40AF">R$ 1.115,80</span><span class="pag-badge pag-future">📅 A pagar</span></div></div><div class="pag-row" data-status="future" data-month="2026-08"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500;line-height:1.4">Wyndham Orlando — parc. 4/6</div><div style="margin-top:3px"><span class="cpill c9377">●&nbsp;9377</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#1E40AF">R$ 612,27</span><span class="pag-badge pag-future">📅 A pagar</span></div></div><div class="pag-row" data-status="future" data-month="2026-05"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500;line-height:1.4">Hotel Miami — Shine Suites (1x)</div><div style="margin-top:3px"><span class="cpill c9377">●&nbsp;9377</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#1E40AF">R$ 1.594,00</span><span class="pag-badge pag-future">📅 A pagar</span></div></div><div class="pag-row" data-status="est" data-month="2026-08"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500;line-height:1.4">Seguro Viagem</div><div style="margin-top:3px"><span class="cpill cgray">cartão a confirmar</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#9A3412">R$ 900,00</span><span class="pag-badge pag-est">🔵 Est.</span></div></div><div class="pag-row" data-status="est" data-month="2026-08"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500;line-height:1.4">Chip Internacional (2x)</div><div style="margin-top:3px"><span class="cpill cgray">cartão a confirmar</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#9A3412">R$ 600,00</span><span class="pag-badge pag-est">🔵 Est.</span></div></div></div></div><div class="pag-month-block" id="pmo-2026-09" style="background:#fff;border:1px solid #e5e7eb;border-left:5px solid #3B82F6;border-radius:12px;overflow:hidden;margin-bottom:.875rem"><div style="background:#EFF6FF;padding:.875rem 1.25rem;display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:.5rem"><div><div style="font-size:14px;font-weight:700">Setembro 2026</div><div style="font-size:11px;color:#6B7280;margin-top:2px">Fatura fecha 01 &rarr; <strong style="color:#3B82F6">Vence 08/out/2026</strong></div></div><div style="text-align:right"><div style="font-size:17px;font-weight:800;color:#0F6E56">R$ 4.315,03</div><div style="margin-top:3px"><span style="color:#1E40AF;font-weight:600;font-size:11px">R$ 4.315,03 a pagar</span></div></div></div><div style="padding:.25rem 1.25rem .75rem"><div class="pag-row" data-status="future" data-month="2026-09"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500;line-height:1.4">Passagem LATAM — parc. 5/6</div><div style="margin-top:3px"><span class="cpill c9377">●&nbsp;9377 LATAM</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#1E40AF">R$ 1.544,31</span><span class="pag-badge pag-future">📅 A pagar</span></div></div><div class="pag-row" data-status="future" data-month="2026-09"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500;line-height:1.4">Carro Florida Rental — parc. 5/6</div><div style="margin-top:3px"><span class="cpill cgray">cartão a confirmar</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#1E40AF">R$ 833,33</span><span class="pag-badge pag-future">📅 A pagar</span></div></div><div class="pag-row" data-status="future" data-month="2026-09"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500;line-height:1.4">Wyndham Orlando — parc. 5/6</div><div style="margin-top:3px"><span class="cpill c9377">●&nbsp;9377</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#1E40AF">R$ 612,27</span><span class="pag-badge pag-future">📅 A pagar</span></div></div><div class="pag-row" data-status="future" data-month="2026-09"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500;line-height:1.4">Resort fee Wyndham (check-in)</div><div style="margin-top:3px"><span class="cpill cgray">cartão a confirmar</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#1E40AF">R$ 1.325,12</span><span class="pag-badge pag-future">📅 A pagar</span></div></div></div></div><div class="pag-month-block" id="pmo-2026-10" style="background:#fff;border:1px solid #e5e7eb;border-left:5px solid #3B82F6;border-radius:12px;overflow:hidden;margin-bottom:.875rem"><div style="background:#EFF6FF;padding:.875rem 1.25rem;display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:.5rem"><div><div style="font-size:14px;font-weight:700">Outubro 2026</div><div style="font-size:11px;color:#6B7280;margin-top:2px">Fatura fecha 01 &rarr; <strong style="color:#3B82F6">Vence 08/nov/2026</strong></div></div><div style="text-align:right"><div style="font-size:17px;font-weight:800;color:#0F6E56">R$ 2.989,91</div><div style="margin-top:3px"><span style="color:#1E40AF;font-weight:600;font-size:11px">R$ 2.989,91 a pagar</span></div></div></div><div style="padding:.25rem 1.25rem .75rem"><div class="pag-row" data-status="future" data-month="2026-10"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500;line-height:1.4">Passagem LATAM — parc. 6/6</div><div style="margin-top:3px"><span class="cpill c9377">●&nbsp;9377 LATAM</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#1E40AF">R$ 1.544,31</span><span class="pag-badge pag-future">📅 A pagar</span></div></div><div class="pag-row" data-status="future" data-month="2026-10"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500;line-height:1.4">Carro Florida Rental — parc. 6/6</div><div style="margin-top:3px"><span class="cpill cgray">cartão a confirmar</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#1E40AF">R$ 833,33</span><span class="pag-badge pag-future">📅 A pagar</span></div></div><div class="pag-row" data-status="future" data-month="2026-10"><div style="flex:1;min-width:0"><div style="font-size:12px;font-weight:500;line-height:1.4">Wyndham Orlando — parc. 6/6</div><div style="margin-top:3px"><span class="cpill c9377">●&nbsp;9377</span></div></div><div style="display:flex;align-items:center;gap:.5rem;flex-shrink:0"><span style="font-size:13px;font-weight:700;color:#1E40AF">R$ 612,27</span><span class="pag-badge pag-future">📅 A pagar</span></div></div></div></div></div>
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin-top:.75rem">
+  <div style="background:#FEF3C7;border:1px solid #D97706;border-radius:10px;padding:.875rem 1rem;font-size:12px;color:#92400E">
+    ⚠️ <strong>Cartão do carro a confirmar</strong> — Florida Rental Car · 6x R$ 833,33
+  </div>
+  <div style="background:#EFF6FF;border:1px solid #93C5FD;border-radius:10px;padding:.875rem 1rem;font-size:12px;color:#1E40AF">
+    🏨 <strong>Resort fee Wyndham</strong> — R$ 1.325,12 no check-in 05/set · fatura vence 08/out
+  </div>
+</div>
 </div>
 
 </body>
